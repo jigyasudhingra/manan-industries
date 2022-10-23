@@ -1,5 +1,6 @@
 {
   "name": "manan-industries",
+  "homepage": "https://mananindustries.in/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,7 +29,7 @@
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "yarn build && echo 'mananindustries.in' > ./build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
