@@ -1,10 +1,9 @@
-import { useMediaQuery } from 'react-responsive'
+import { useTheme, useMediaQuery as muiUseMediaQuery } from '@mui/material'
 
 const MediaQuery = () => {
-  const isDeviceSm = useMediaQuery({ query: '(max-width: 600px)' })
-  const isDeviceLg = useMediaQuery({
-    query: '(min-width: 900px)',
-  })
+  const theme = useTheme()
+  const isDeviceSm = muiUseMediaQuery(theme.breakpoints.down('sm'))
+  const isDeviceLg = muiUseMediaQuery(theme.breakpoints.up('md'))
   const isDeviceMd = !isDeviceLg
 
   return { isDeviceSm, isDeviceLg, isDeviceMd }
