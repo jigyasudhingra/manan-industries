@@ -10,6 +10,7 @@ const ContactInfo = () => {
         <div style={styles.container}>
           <div style={styles.left}>
             MANAN INDUSTIRES
+            <br />
             <div style={styles.address}>
               Plot No. 228, MIE Industrial Area
               <br /> Part - A, Bahadurgarh - 124507
@@ -22,11 +23,14 @@ const ContactInfo = () => {
           </div>
           <div style={styles.verticalLine} />
           <div style={styles.right}>
-            LALIT AHUJA
-            <br />
-            <div style={{ fontWeight: 300 }}>1234567899</div>
-            <br /> MANAN AHUJA
-            <br /> 0123456789
+            <div style={{ fontWeight: 600, fontSize: 36 }}>LALIT AHUJA</div>
+            <div style={{ fontWeight: 300, fontSize: 16 }}>1234567899</div>
+            <div style={{ fontWeight: 600, fontSize: 36 }}>MANAN AHUJA</div>
+            <div style={{ fontWeight: 300, fontSize: 16 }}>1234567899</div>
+            <button type="button" style={styles.btn2}>
+              {/* <FontAwesomeIcon icon="fa-solid fa-globe" /> */}
+              rainbow_coat@yahoo.com
+            </button>
           </div>
         </div>
       </div>
@@ -58,19 +62,16 @@ const styles = {
     fontSize: 30,
     fontWeight: 600,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
   },
   left: {
-    margin: 10,
+    fontSize: 36,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   address: {
     fontSize: 15,
     fontWeight: 400,
-  },
-  verticalLine: {
-    margin: 10,
-    borderLeft: '6px solid white',
-    height: 200,
   },
   btn: {
     backgroundColor: '#5e17eb',
@@ -79,9 +80,24 @@ const styles = {
     borderRadius: 20,
     border: 'none',
     padding: 15,
+    fontSize: 15,
+  },
+  verticalLine: {
+    margin: 10,
+    borderLeft: '6px solid white',
+    height: 200,
   },
   right: {
-    margin: 10,
+    marginLeft: 25,
+  },
+  btn2: {
+    backgroundColor: '#5e17eb',
+    color: 'white',
+    width: 250,
+    borderRadius: 20,
+    border: 'none',
+    padding: 15,
+    fontSize: 15,
   },
 }
 
