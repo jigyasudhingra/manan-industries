@@ -9,14 +9,14 @@ const Details = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam esse blanditiis quos tempore quasi enim!',
   },
   {
-    name: 'abc',
-    company: 'xyz',
+    name: 'Kiara Austen',
+    company: 'Brooknew Ltd.',
     review:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam esse blanditiis quos tempore quasi enim!',
   },
   {
-    name: 'abc',
-    company: 'xyz',
+    name: 'Kiara Austen',
+    company: 'Brooknew Ltd.',
     review:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam esse blanditiis quos tempore quasi enim!',
   },
@@ -26,7 +26,7 @@ const Testimonials = () => {
   return (
     <Box
       p={10}
-      sx={{ backgroundColor: '#270059' }}
+      sx={{ backgroundColor: '#420d8c' }}
       pl={22}
       pr={22}
       id="testimonials"
@@ -38,7 +38,7 @@ const Testimonials = () => {
             mr={ind === Details.length - 1 ? 0 : 10}
             p={4}
             style={{
-              backgroundColor: 'rgba(230, 209, 255, 0.3)',
+              backgroundColor: '#270059',
               color: 'white',
             }}
           >

@@ -58,9 +58,9 @@ const ContactInfo = () => {
               <Icon
                 icon="icomoon-free:mail4"
                 color="white"
-                style={{ fontSize: 28 }}
+                style={{ fontSize: 25, marginBottom: 2 }}
               />
-              <Box ml={1}>www.mananindustries.in</Box>
+              <Box ml={1}>rainbow_coat@yahoo.com</Box>
             </Box>
           </Box>
         </Box>
