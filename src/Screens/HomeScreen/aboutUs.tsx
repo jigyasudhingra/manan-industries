@@ -1,8 +1,9 @@
 import React from 'react'
+import sectionTwo from '../../Assets/sectionTwo.jpg'
 
 const aboutUs = () => {
   return (
-    <div style={styles.aboutUsBody}>
+    <div style={styles.aboutUsBody} id="about">
       <div style={styles.text}>
         <h1 style={styles.heading}>ABOUT US</h1>
         <p style={styles.para}>
@@ -23,6 +24,8 @@ const aboutUs = () => {
 
 const styles = {
   aboutUsBody: {
+    backgroundImage: `url(${sectionTwo})`,
+    backgroundSize: 'cover',
     display: 'flex',
   },
   text: {

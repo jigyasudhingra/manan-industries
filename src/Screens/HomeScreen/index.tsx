@@ -1,28 +1,21 @@
 import React from 'react'
 // import ContactInfo from '../../Components/ContactInfo'
-import Navbar from '../../Components/Navbar'
 import Welcome from './welcome'
 import AboutUs from './aboutUs'
-import homepagePic from '../../Assets/homepage.jpg'
-import sectionTwo from '../../Assets/sectionTwo.jpg'
 import sectionThree from '../../Assets/sectionThree.jpg'
 import sectionFour from '../../Assets/sectionFour.jpg'
 
 import Rainbow from './rainbow'
 import Testimonials from './testimonials'
 import ContactInfo from '../../Components/ContactInfo'
+import NavigationMenu from '../../Components/NavigationMenu'
 
 const HomeScreen = () => {
   return (
     <>
-      <div style={styles.sectionOneBody}>
-        <Navbar />
-        <Welcome />
-      </div>
-      <div style={styles.sectionTwoBody}>
-        <Navbar />
-        <AboutUs />
-      </div>
+      <NavigationMenu />
+      <Welcome />
+      <AboutUs />
       <div style={styles.sectionThreeBody}>
         <Rainbow />
       </div>
@@ -37,18 +30,6 @@ const HomeScreen = () => {
 }
 
 const styles = {
-  sectionOneBody: {
-    background: `url(${homepagePic}) no-repeat center center fixed`,
-    minHeight: 800,
-    minWidth: '100%',
-    margin: 0,
-  },
-  sectionTwoBody: {
-    background: `url(${sectionTwo}) no-repeat center center fixed`,
-    minHeight: 800,
-    minWidth: '100%',
-    margin: 0,
-  },
   sectionThreeBody: {
     background: `url(${sectionThree}) no-repeat center center fixed`,
     minHeight: 800,

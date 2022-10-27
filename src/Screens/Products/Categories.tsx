@@ -1,9 +1,7 @@
 import React from 'react'
 import { Box, Grid, Theme } from '@mui/material'
 import { createStyles, makeStyles } from '@mui/styles'
-import { Link } from 'react-scroll'
 import MediaQuery from '../../Components/MediaQuery'
-import Typo from '../../Components/Typo'
 
 const details = [
   'Music',
@@ -17,9 +15,28 @@ const details = [
   'Quiz',
 ]
 
+const testimonials = [
+  {
+    name: 'abc',
+    company: 'xyz',
+    review: 'ers',
+  },
+  {
+    name: 'abc',
+    company: 'xyz',
+    review: 'ers',
+  },
+  {
+    name: 'abc',
+    company: 'xyz',
+    review: 'ers',
+  },
+]
+
 const Categories = () => {
   const classes = useStyles()
   const { isDeviceSm } = MediaQuery()
+
   return (
     <>
       <Box>Hello</Box>
@@ -38,7 +55,7 @@ const Categories = () => {
             spacing={isDeviceSm ? 2 : 3}
             justifyContent="center"
           >
-            {Array.from(details).map((i) => (
+            {/* {Array.from(details).map((i) => (
               <Grid item lg={4} sm={6} xs={6} key={`${i}`}>
                 <Link to={i} smooth spy duration={1000}>
                   <Box className={classes.card}>
@@ -46,7 +63,22 @@ const Categories = () => {
                   </Box>
                 </Link>
               </Grid>
-            ))}
+            ))} */}
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                flexDirection: 'column',
+              }}
+            >
+              {testimonials.map((i) => (
+                <div>
+                  <div>{i.company}</div>
+                  <div>{i.name}</div>
+                  <div>{i.review}</div>
+                </div>
+              ))}
+            </div>
           </Grid>
         </Box>
       </Box>

@@ -2,6 +2,7 @@ import React from 'react'
 
 import logoPic from '../../Assets/logoo.jpg'
 import strike from '../../Assets/strike.png'
+import homepagePic from '../../Assets/homepage.jpg'
 
 const welcome = () => {
   return (
@@ -19,6 +20,9 @@ const welcome = () => {
 const styles = {
   welcomeBody: {
     display: 'relative',
+    width: '100%',
+    backgroundImage: `url(${homepagePic})`,
+    backgroundSize: 'cover',
   },
   logo: {
     background: `url(${logoPic})`,
@@ -49,7 +53,7 @@ const styles = {
     display: 'inline-block',
     alignItems: 'center',
     justifyContent: 'center',
-    fontFamily: 'Pinyon-script',
+    fontFamily: `'Pinyon Script', cursive`,
   },
   strike: {
     background: `url(${strike})`,
