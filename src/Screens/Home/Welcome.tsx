@@ -44,6 +44,12 @@ const useStyles = makeStyles((theme: Theme) =>
       backgroundImage: `url(${homepagePic}) `,
       backgroundSize: 'cover',
     },
+    overlay: {
+      position: 'absolute',
+      width: '100%',
+      height: '100%',
+      background: '#22014D',
+    },
     verticalLine: {
       borderLeft: '1px solid #ffffff47',
       height: 75,

@@ -25,27 +25,41 @@ const Details = [
 const Testimonials = () => {
   return (
     <Box
-      p={10}
-      sx={{ backgroundColor: '#420d8c' }}
+      p={7}
+      sx={{
+        background: `linear-gradient(29deg, rgba(39,0,89,1) 0%, rgba(66,13,140,1) 50%, rgba(39,0,89,1) 100%)`,
+        letterSpacing: 0.5,
+        color: 'white',
+      }}
       pl={22}
       pr={22}
       id="testimonials"
     >
+      <div
+        style={{
+          marginBottom: 50,
+          fontSize: '2em',
+          fontWeight: 700,
+          letterSpacing: 1.1,
+        }}
+      >
+        TESTIMONIALS
+      </div>
       <Box display="flex" width="100%" justifyContent="space-between">
         {Details.map((i, ind) => (
           <Box
+            id={i.name}
             borderRadius={7}
             mr={ind === Details.length - 1 ? 0 : 10}
             p={4}
             style={{
               backgroundColor: '#270059',
-              color: 'white',
             }}
           >
-            <Box textAlign="left" fontSize={16}>
+            <Box textAlign="left" fontSize={14}>
               <p>{i.review}</p>
             </Box>
-            <Box textAlign="left" fontSize={14} letterSpacing={1.1}>
+            <Box textAlign="left" fontSize={16} letterSpacing={1.1}>
               <b>{i.name}</b>
               <br />
               {i.company}

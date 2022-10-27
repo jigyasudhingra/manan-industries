@@ -1,13 +1,13 @@
 import React from 'react'
 import { Button } from '@mui/material'
-import rainbowPic from '../../Assets/rainbow.jpg'
-import sectionThree from '../../Assets/homepage2.jpg'
+import rainbowPic from '../../Assets/rainbow.png'
+import sectionThree from '../../Assets/sectionThree.jpg'
 
 const Rainbow = () => {
   return (
     <div style={styles.rainbowBody} id="products">
       <div>
-        <img src={rainbowPic} alt="" width={500} />
+        <img src={rainbowPic} alt="" width="70%" />
       </div>
       <br />
       <div style={styles.txt}>
@@ -23,14 +23,18 @@ const Rainbow = () => {
       </div>
       <div>
         <Button
+          onClick={() => {
+            window.location.href = '/products'
+          }}
           style={{
             borderRadius: 20,
             backgroundColor: '#5f19eb',
-            padding: 5,
-            paddingLeft: 25,
-            paddingRight: 25,
+            padding: 7,
+            paddingLeft: 30,
+            paddingRight: 30,
             color: 'white',
             fontSize: 13,
+            letterSpacing: 0.6,
             fontFamily: `'Poppins', sans-serif `,
             textTransform: 'capitalize',
           }}

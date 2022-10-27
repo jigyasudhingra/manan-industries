@@ -7,7 +7,11 @@ import React from 'react'
 const ContactInfo = () => {
   return (
     <Box
-      sx={{ backgroundColor: '#270059', color: 'white' }}
+      sx={{
+        background:
+          'linear-gradient(29deg, rgba(72,2,131,1) 0%, rgba(34,1,77,1) 59%, rgba(72,2,131,1) 100%)',
+        color: 'white',
+      }}
       id="contact-us"
       pt={5}
       pl={35}
@@ -16,7 +20,6 @@ const ContactInfo = () => {
     >
       <div
         style={{
-          marginBottom: 50,
           fontSize: '2em',
           fontWeight: 700,
           letterSpacing: 1.1,
@@ -24,16 +27,26 @@ const ContactInfo = () => {
       >
         CONTACT US
       </div>
+      <div
+        style={{
+          fontSize: 13,
+          letterSpacing: 1.1,
+          marginBottom: 40,
+          color: 'pink',
+        }}
+      >
+        Feel free to reach out
+      </div>
       <Box
         display="flex"
         p={5}
         sx={{ backgroundColor: '#420d8c', borderRadius: 6 }}
       >
         <Box width="50%" p={3} textAlign="left">
-          <div style={{ fontSize: 25, fontWeight: 700, letterSpacing: 1.1 }}>
+          <div style={{ fontSize: 23, fontWeight: 700, letterSpacing: 1.1 }}>
             MANAN INDUSTRIES
           </div>
-          <div style={{ fontSize: 13 }}>
+          <div style={{ fontSize: 12 }}>
             Plot No. 228, MIE Industrial Area
             <br />
             Part - A, Bahadurgarh - 124507
@@ -71,13 +84,13 @@ const ContactInfo = () => {
           borderLeft="1px solid white"
           textAlign="left"
         >
-          <div style={{ fontSize: 25, fontWeight: 700, letterSpacing: 1.1 }}>
+          <div style={{ fontSize: 23, fontWeight: 700, letterSpacing: 1.1 }}>
             LALIT AHUJA
           </div>
-          <div style={{ fontSize: 13 }}>Plot No. 228, MIE Industrial Area</div>
+          <div style={{ fontSize: 12 }}>Plot No. 228, MIE Industrial Area</div>
           <div
             style={{
-              fontSize: 25,
+              fontSize: 23,
               fontWeight: 700,
               letterSpacing: 1.1,
               marginTop: 8,
@@ -85,7 +98,7 @@ const ContactInfo = () => {
           >
             MANAN AHUJA
           </div>
-          <div style={{ fontSize: 13 }}>Plot No. 228, MIE Industrial Area</div>
+          <div style={{ fontSize: 12 }}>Plot No. 228, MIE Industrial Area</div>
           <Box
             width="fit-content"
             sx={{

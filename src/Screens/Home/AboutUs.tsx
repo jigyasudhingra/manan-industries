@@ -1,7 +1,6 @@
 import { Box } from '@mui/material'
 import React from 'react'
 import sectionImage from '../../Assets/section2.png'
-import sectionTwo from '../../Assets/sectionTwo.jpg'
 
 const AboutUs = () => {
   return (
@@ -9,28 +8,31 @@ const AboutUs = () => {
       id="about-us"
       width="100%"
       style={{
-        backgroundImage: `url(${sectionTwo})`,
-        backgroundSize: 'cover',
+        // backgroundImage: `url(${sectionTwo})`,
+        background: `linear-gradient(29deg, rgba(39,0,89,1) 0%, rgba(66,13,140,1) 50%, rgba(39,0,89,1) 100%)`,
+        letterSpacing: 0.5,
+        // backgroundSize: 'cover',
         color: 'white',
       }}
     >
       <Box display="flex">
         <Box
           width="100%"
-          style={{ textAlignLast: 'left' }}
+          style={{ textAlignLast: 'left', fontSize: 16 }}
           textAlign="left"
           p={10}
           pl="10%"
         >
-          <h1
+          <div
             style={{
               fontWeight: 700,
               letterSpacing: 1.1,
               paddingBottom: 8,
+              fontSize: 36,
             }}
           >
             ABOUT US
-          </h1>
+          </div>
           <p>
             Established in the year 2003, Manan Industries is engaged as
             Manufacturer and Wholesaler of Polyester Powder Coating, Structure

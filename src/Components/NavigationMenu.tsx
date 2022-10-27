@@ -26,6 +26,29 @@ const NAVIGATION_LINKS: { id: string; url: string; label: string }[] = [
   },
 ]
 
+const PRODUCT_NAVIGATION = [
+  {
+    id: 'home',
+    url: '/',
+    label: 'Home',
+  },
+  {
+    id: 'about-us',
+    url: '/',
+    label: 'About Us',
+  },
+  {
+    id: 'testimonials',
+    url: '/',
+    label: 'Testimonials',
+  },
+  {
+    id: 'contact-us',
+    url: '/',
+    label: 'Contact Us',
+  },
+]
+
 interface Props {
   // eslint-disable-next-line react/require-default-props
   window?: () => Window
@@ -48,6 +71,7 @@ export const HideOnScroll = (props: Props) => {
 const NavigationMenu: React.FC = () => {
   const classes = styles as any
   const { isDeviceSm } = MediaQuery()
+  const ProductsPage = window.location.href.endsWith('products')
   return (
     // <HideOnScroll>
     <AppBar color="transparent" className={classes.header} elevation={0}>
@@ -63,7 +87,7 @@ const NavigationMenu: React.FC = () => {
           alignSelf="center"
           width={isDeviceSm ? '90%' : '40%'}
           style={{
-            backgroundColor: '#5413B2',
+            backgroundColor: 'rgba(86, 19, 180, 0.67)',
             borderRadius: 50,
             padding: 14,
           }}
@@ -79,10 +103,9 @@ const NavigationMenu: React.FC = () => {
               duration={1000}
               style={{
                 color: 'white',
-                fontSize: isDeviceSm ? 13 : 14,
+                fontSize: 13,
+                letterSpacing: 0.6,
                 fontWeight: isDeviceSm ? 400 : 600,
-                opacity: 0.8,
-                letterSpacing: 1,
               }}
             >
               {nl.label}
