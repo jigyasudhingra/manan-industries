@@ -24,7 +24,13 @@ const Details = [
 
 const Testimonials = () => {
   return (
-    <Box p={10} sx={{ backgroundColor: '#270059' }} pl={22} pr={22}>
+    <Box
+      p={10}
+      sx={{ backgroundColor: '#270059' }}
+      pl={22}
+      pr={22}
+      id="testimonials"
+    >
       <Box display="flex" width="100%" justifyContent="space-between">
         {Details.map((i, ind) => (
           <Box

@@ -6,6 +6,7 @@ import sectionTwo from '../../Assets/sectionTwo.jpg'
 const AboutUs = () => {
   return (
     <Box
+      id="about-us"
       width="100%"
       style={{
         backgroundImage: `url(${sectionTwo})`,

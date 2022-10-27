@@ -5,7 +5,7 @@ import sectionThree from '../../Assets/homepage2.jpg'
 
 const Rainbow = () => {
   return (
-    <div style={styles.rainbowBody}>
+    <div style={styles.rainbowBody} id="products">
       <div>
         <img src={rainbowPic} alt="" width={500} />
       </div>
