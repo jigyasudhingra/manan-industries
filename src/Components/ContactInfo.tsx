@@ -20,9 +20,9 @@ const ContactInfo = () => {
     >
       <div
         style={{
-          fontSize: '2em',
+          fontSize: 36,
           fontWeight: 700,
-          letterSpacing: 1.1,
+          letterSpacing: 1.5,
         }}
       >
         CONTACT US
@@ -35,7 +35,7 @@ const ContactInfo = () => {
           color: 'pink',
         }}
       >
-        Feel free to reach out
+        FEEL FREE TO REACH OUT
       </div>
       <Box
         display="flex"

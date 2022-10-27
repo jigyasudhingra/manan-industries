@@ -18,15 +18,16 @@ const AboutUs = () => {
       <Box display="flex">
         <Box
           width="100%"
-          style={{ textAlignLast: 'left', fontSize: 16 }}
+          style={{ textAlignLast: 'left', fontSize: 14 }}
           textAlign="left"
           p={10}
+          pt={15}
           pl="10%"
         >
           <div
             style={{
               fontWeight: 700,
-              letterSpacing: 1.1,
+              letterSpacing: 1.5,
               paddingBottom: 8,
               fontSize: 36,
             }}

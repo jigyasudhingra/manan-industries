@@ -37,13 +37,23 @@ const Testimonials = () => {
     >
       <div
         style={{
-          marginBottom: 50,
-          fontSize: '2em',
+          fontSize: 40,
           fontWeight: 700,
-          letterSpacing: 1.1,
+          letterSpacing: 1.5,
         }}
       >
         TESTIMONIALS
+      </div>
+      <div
+        style={{
+          marginBottom: 36,
+          fontSize: 12,
+          letterSpacing: 1.1,
+          color: 'pink',
+          textTransform: 'uppercase',
+        }}
+      >
+        What Our Clients Have To Say
       </div>
       <Box display="flex" width="100%" justifyContent="space-between">
         {Details.map((i, ind) => (
@@ -56,10 +66,10 @@ const Testimonials = () => {
               backgroundColor: '#270059',
             }}
           >
-            <Box textAlign="left" fontSize={14}>
-              <p>{i.review}</p>
+            <Box textAlign="left" fontSize={13} mb={2}>
+              {i.review}
             </Box>
-            <Box textAlign="left" fontSize={16} letterSpacing={1.1}>
+            <Box textAlign="left" fontSize={13} letterSpacing={0.6}>
               <b>{i.name}</b>
               <br />
               {i.company}

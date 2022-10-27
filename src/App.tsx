@@ -3,8 +3,9 @@ import { Box } from '@mui/material'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ProductScreen from './Screens/Products'
 import './App.css'
-import NavigationMenu from './Components/NavigationMenu'
 import Home from './Screens/Home'
+import Listing from './Screens/Products/Listing'
+import NavigationMenu from './Components/NavigationMenu'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductScreen />} />
+          <Route path="/products/:category" element={<Listing />} />
         </Routes>
       </Box>
     </BrowserRouter>
