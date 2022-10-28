@@ -1,12 +1,37 @@
 {
   "files": {
-    "main.js": "/static/js/main.b17526cb.js",
+    "main.css": "/static/css/main.a06b064b.css",
+    "main.js": "/static/js/main.9926a240.js",
     "static/js/787.c0ab7529.chunk.js": "/static/js/787.c0ab7529.chunk.js",
+    "static/media/rainbow.jpg": "/static/media/rainbow.d4fba270c481027b1d07.jpg",
+    "static/media/section2.png": "/static/media/section2.e1023c3845d47948dd0a.png",
+    "static/media/rainbow.png": "/static/media/rainbow.988fc8b9995c9a4e65ed.png",
+    "static/media/slider5.jpg": "/static/media/slider5.b5ca29b4d58b2ce718e4.jpg",
+    "static/media/slider2.jpg": "/static/media/slider2.ea77c62d269da95f49e9.jpg",
+    "static/media/slider3.jpg": "/static/media/slider3.e976804bc5590ff1e133.jpg",
+    "static/media/slider6.jpg": "/static/media/slider6.a4cdb7b8847d67ccfee9.jpg",
+    "static/media/slider1.jpg": "/static/media/slider1.c5701f3d423c87ba646e.jpg",
+    "static/media/slider4.jpg": "/static/media/slider4.918176950421bfb14995.jpg",
+    "static/media/certificate2.jpg": "/static/media/certificate2.73e78bf79c892e27e742.jpg",
+    "static/media/purePolyester.jpg": "/static/media/purePolyester.247d15d248c08a2e3aac.jpg",
+    "static/media/certificate1.jpg": "/static/media/certificate1.dd2c0c3a6efece417779.jpg",
+    "static/media/sectionThree.jpg": "/static/media/sectionThree.05977d1a7f33b51f25c8.jpg",
+    "static/media/certificate3.jpg": "/static/media/certificate3.10f4a983475630e6349d.jpg",
+    "static/media/hybrid.jpg": "/static/media/hybrid.f48ed6847a61ff5908f1.jpg",
+    "static/media/homepage2.jpg": "/static/media/homepage2.0c5bb4f4019958ef384a.jpg",
+    "static/media/pureEpoxy.jpg": "/static/media/pureEpoxy.baedfe3e7475ef18646e.jpg",
+    "static/media/logoo.jpg": "/static/media/logoo.fce0f95e757063ad24a1.jpg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.b17526cb.js.map": "/static/js/main.b17526cb.js.map",
+    "main.a06b064b.css.map": "/static/css/main.a06b064b.css.map",
+    "main.9926a240.js.map": "/static/js/main.9926a240.js.map",
     "787.c0ab7529.chunk.js.map": "/static/js/787.c0ab7529.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b17526cb.js"
+    "static/css/main.a06b064b.css",
+    "static/js/main.9926a240.js"
   ]
 }
