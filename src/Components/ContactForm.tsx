@@ -67,8 +67,6 @@ const ContactForm = () => {
       pb={5}
       style={{
         fontFamily: `'Poppins', sans-serif`,
-        background:
-          'linear-gradient(29deg, rgba(72,2,131,1) 0%, rgba(34,1,77,1) 59%, rgba(72,2,131,1) 100%)',
         color: 'white',
       }}
       id="contact-us"
@@ -212,7 +210,7 @@ const useStyles = makeStyles((theme: Theme) =>
       fontSize: 12,
       border: 'none',
       borderRadius: 5,
-      width: '40%',
+      width: '60%',
     },
     input: {
       marginBottom: '2%',

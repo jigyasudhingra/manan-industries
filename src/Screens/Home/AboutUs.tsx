@@ -1,28 +1,32 @@
 import { Box } from '@mui/material'
 import React from 'react'
 import sectionImage from '../../Assets/section2.png'
+import MediaQuery from '../../Components/MediaQuery'
 
 const AboutUs = () => {
+  const { isDeviceSm } = MediaQuery()
   return (
     <Box
       id="about-us"
       width="100%"
       style={{
-        // backgroundImage: `url(${sectionTwo})`,
         background: `linear-gradient(29deg, rgba(39,0,89,1) 0%, rgba(66,13,140,1) 50%, rgba(39,0,89,1) 100%)`,
         letterSpacing: 0.5,
-        // backgroundSize: 'cover',
         color: 'white',
       }}
     >
-      <Box display="flex">
+      <Box display={isDeviceSm ? '' : 'flex'}>
         <Box
-          width="100%"
-          style={{ textAlignLast: 'left', fontSize: 14 }}
-          textAlign="left"
-          p={10}
+          width={!isDeviceSm ? '100%' : '80%'}
+          style={{
+            textAlignLast: isDeviceSm ? 'center' : 'left',
+            fontSize: 14,
+          }}
+          textAlign={isDeviceSm ? 'center' : 'left'}
+          p={isDeviceSm ? 2 : 10}
           pt={15}
           pl="10%"
+          pr={isDeviceSm ? '10%' : 2}
         >
           <div
             style={{
@@ -48,12 +52,17 @@ const AboutUs = () => {
         </Box>
         <Box
           width="100%"
-          style={{ textAlignLast: 'left' }}
-          textAlign="left"
+          style={{ textAlignLast: isDeviceSm ? 'center' : 'left' }}
+          textAlign={isDeviceSm ? 'center' : 'left'}
           alignSelf="center"
-          p={10}
+          p={isDeviceSm ? 0 : 10}
+          pb={isDeviceSm ? 4 : 10}
         >
-          <img src={sectionImage} alt="painting" width={420} />
+          <img
+            src={sectionImage}
+            alt="painting"
+            width={isDeviceSm ? 250 : 420}
+          />
         </Box>
       </Box>
     </Box>

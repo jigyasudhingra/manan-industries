@@ -2,15 +2,29 @@ import React from 'react'
 import { Button } from '@mui/material'
 import rainbowPic from '../../Assets/rainbow.png'
 import sectionThree from '../../Assets/sectionThree.jpg'
+import MediaQuery from '../../Components/MediaQuery'
 
 const Rainbow = () => {
+  const { isDeviceSm } = MediaQuery()
   return (
     <div style={styles.rainbowBody} id="products">
-      <div>
-        <img src={rainbowPic} alt="" width="70%" />
+      <div
+        style={{
+          marginLeft: isDeviceSm ? '-27%' : '0%',
+        }}
+      >
+        <img src={rainbowPic} width={isDeviceSm ? 380 : '70%'} alt="" />
       </div>
       <br />
-      <div style={styles.txt}>
+      <div
+        style={{
+          color: 'white',
+          fontSize: 14,
+          width: isDeviceSm ? '100%' : '60%',
+          display: 'inline-flex',
+          marginBottom: isDeviceSm ? 40 : 50,
+        }}
+      >
         Established in the year 2003, Manan Industries is engaged as
         Manufacturer and Wholesaler of Polyester Powder Coating, Structure
         Powder Coating, Metallic Powder Coating, Hybrid Powder Coating, etc.
@@ -51,14 +65,6 @@ const styles = {
     backgroundSize: 'cover',
     color: 'white',
     padding: 50,
-  },
-  txt: {
-    color: 'white',
-    textAlign: 'justify' as const,
-    fontSize: 16,
-    maxWidth: '60%',
-    display: 'inline-flex',
-    marginBottom: 50,
   },
 }
 export default Rainbow

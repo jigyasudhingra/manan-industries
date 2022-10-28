@@ -1,6 +1,7 @@
 import { Icon } from '@iconify/react'
 import { Box } from '@mui/material'
 import React from 'react'
+import ContactForm from './ContactForm'
 import MediaQuery from './MediaQuery'
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -19,6 +20,7 @@ const ContactInfo = () => {
       pr={isDeviceSm ? 5 : 35}
       pb={isDeviceSm ? 5 : 7}
     >
+      <ContactForm />
       <Box
         display={!isDeviceSm ? 'flex' : ''}
         p={5}
@@ -43,25 +45,26 @@ const ContactInfo = () => {
           {!isDeviceSm && <br />}
           <Box
             width="fit-content"
+            ml={isDeviceSm ? -1 : 0}
             sx={{
               backgroundColor: '#5f19eb',
               color: 'white',
               borderRadius: 5,
-              marginTop: 4,
               padding: 1,
-              fontSize: 14,
-              pl: isDeviceSm ? 2 : 3,
+              marginTop: isDeviceSm ? 1 : 4,
+              fontSize: isDeviceSm ? 12 : 14,
+              pl: isDeviceSm ? 1 : 3,
               pr: isDeviceSm ? 2 : 3,
             }}
           >
             <Box display="flex" alignItems="center">
-              {!isDeviceSm && (
-                <Icon
-                  icon="icomoon-free:mail4"
-                  color="white"
-                  style={{ fontSize: 25, marginBottom: 2 }}
-                />
-              )}
+              <Icon
+                icon="icomoon-free:mail4"
+                color="white"
+                style={{
+                  fontSize: isDeviceSm ? 20 : 28,
+                }}
+              />
               <Box ml={1}>rainbow_coat@yahoo.com</Box>
             </Box>
           </Box>
@@ -70,6 +73,7 @@ const ContactInfo = () => {
           width={isDeviceSm ? '100%' : '50%'}
           p={1}
           pl={isDeviceSm ? 0 : 6}
+          pt={isDeviceSm ? 2.5 : 1}
           borderLeft={!isDeviceSm ? '1px solid white' : ''}
           textAlign="left"
         >
@@ -90,21 +94,24 @@ const ContactInfo = () => {
           <div style={{ fontSize: 12 }}>Plot No. 228, MIE Industrial Area</div>
           <Box
             width="fit-content"
+            ml={isDeviceSm ? -1 : 0}
             sx={{
               backgroundColor: '#5f19eb',
               color: 'white',
               borderRadius: 5,
-              marginTop: 4,
               padding: 1,
-              fontSize: 14,
-              pl: isDeviceSm ? 2 : 3,
+              marginTop: isDeviceSm ? 1 : 4,
+              fontSize: isDeviceSm ? 12 : 14,
+              pl: isDeviceSm ? 1 : 3,
               pr: isDeviceSm ? 2 : 3,
             }}
           >
             <Box display="flex" alignItems="center">
-              {!isDeviceSm && (
-                <Icon icon="mdi:web" color="white" style={{ fontSize: 28 }} />
-              )}
+              <Icon
+                icon="mdi:web"
+                color="white"
+                style={{ fontSize: isDeviceSm ? 20 : 28 }}
+              />
               <Box ml={1}>www.mananindustries.in</Box>
             </Box>
           </Box>
