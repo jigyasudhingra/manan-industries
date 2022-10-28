@@ -5,13 +5,11 @@ import ProductScreen from './Screens/Products'
 import './App.css'
 import Home from './Screens/Home'
 import Listing from './Screens/Products/Listing'
-import NavigationMenu from './Components/NavigationMenu'
 
 const App = () => {
   return (
     <BrowserRouter>
       <Box className="App">
-        <NavigationMenu />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductScreen />} />

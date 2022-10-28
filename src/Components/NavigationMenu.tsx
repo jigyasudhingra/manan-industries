@@ -1,5 +1,6 @@
 import { AppBar, Box, Slide, useScrollTrigger } from '@mui/material'
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import { Link } from 'react-scroll'
 import MediaQuery from './MediaQuery'
 
@@ -38,9 +39,9 @@ const PRODUCT_NAVIGATION = [
     label: 'About Us',
   },
   {
-    id: 'testimonials',
-    url: '/',
-    label: 'Testimonials',
+    id: 'products',
+    url: '/products',
+    label: 'Products',
   },
   {
     id: 'contact-us',
@@ -68,10 +69,15 @@ export const HideOnScroll = (props: Props) => {
   )
 }
 
-const NavigationMenu: React.FC = () => {
+interface NavigationProps {
+  ProductsPage: boolean
+}
+
+const NavigationMenu = (props: NavigationProps) => {
   const classes = styles as any
   const { isDeviceSm } = MediaQuery()
-  const ProductsPage = window.location.href.endsWith('products')
+  const { ProductsPage } = props
+
   return (
     // <HideOnScroll>
     <AppBar color="transparent" className={classes.header} elevation={0}>
@@ -95,22 +101,37 @@ const NavigationMenu: React.FC = () => {
           flexDirection="row"
           justifyContent="space-around"
         >
-          {NAVIGATION_LINKS.map((nl) => (
-            <Link
-              to={nl.url}
-              smooth
-              spy
-              duration={1000}
-              style={{
-                color: 'white',
-                fontSize: 13,
-                letterSpacing: 0.6,
-                fontWeight: isDeviceSm ? 400 : 600,
-              }}
-            >
-              {nl.label}
-            </Link>
-          ))}
+          {!ProductsPage
+            ? NAVIGATION_LINKS.map((nl) => (
+                <Link
+                  to={nl.url}
+                  smooth
+                  spy
+                  duration={1000}
+                  style={{
+                    color: 'white',
+                    fontSize: 13,
+                    letterSpacing: 0.6,
+                    fontWeight: isDeviceSm ? 400 : 600,
+                  }}
+                >
+                  {nl.label}
+                </Link>
+              ))
+            : PRODUCT_NAVIGATION.map((i) => (
+                <NavLink
+                  to={i.url}
+                  style={{
+                    color: 'white',
+                    fontSize: 13,
+                    letterSpacing: 0.6,
+                    fontWeight: isDeviceSm ? 400 : 600,
+                    textDecoration: 'none',
+                  }}
+                >
+                  {i.label}
+                </NavLink>
+              ))}
         </Box>
       </Box>
     </AppBar>

@@ -8,12 +8,10 @@ import sectionFour from '../../Assets/sectionFour.jpg'
 import Rainbow from './rainbow'
 import Testimonials from './testimonials'
 import ContactInfo from '../../Components/ContactInfo'
-import NavigationMenu from '../../Components/NavigationMenu'
 
 const HomeScreen = () => {
   return (
     <>
-      <NavigationMenu />
       <Welcome />
       <AboutUs />
       <div style={styles.sectionThreeBody}>

@@ -1,6 +1,7 @@
 import { Box } from '@mui/material'
 import { Icon } from '@iconify/react'
 import React from 'react'
+import ContactForm from './ContactForm'
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -37,6 +38,7 @@ const ContactInfo = () => {
       >
         FEEL FREE TO REACH OUT
       </div>
+      <ContactForm />
       <Box
         display="flex"
         p={5}

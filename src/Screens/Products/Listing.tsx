@@ -4,6 +4,7 @@ import React from 'react'
 import { Link } from 'react-scroll'
 import ContactInfo from '../../Components/ContactInfo'
 import MediaQuery from '../../Components/MediaQuery'
+import NavigationMenu from '../../Components/NavigationMenu'
 
 export interface ProductDetails {
   name: string
@@ -11,7 +12,7 @@ export interface ProductDetails {
     packagingSize: number
     form: string
     color: string
-    price: number
+    price: string
   }
   imageUrl: string
   id: string
@@ -36,6 +37,7 @@ const Listing = () => {
 
   return (
     <Box>
+      <NavigationMenu ProductsPage />
       <Box
         p={10}
         pt={15}
@@ -63,7 +65,7 @@ const Listing = () => {
           >
             {LISTING_DETAILS.map((i: any) => (
               <Grid item lg={4} sm={6} xs={12} key={`${i.id}`}>
-                <Box className={classes.card} p={3}>
+                <Box className={classes.card} p={2}>
                   <Box>
                     <img
                       src={i.imageUrl}
@@ -230,7 +232,31 @@ const HybridPowderDetails: Array<ProductDetails> = [
       packagingSize: 6,
       form: 'solid',
       color: 'White',
-      price: 200,
+      price: 'Rs 200/Kg',
+    },
+    imageUrl:
+      'https://5.imimg.com/data5/YF/XH/MY-6124050/powder-coating-products-500x500.jpg',
+    id: 'hybrid',
+  },
+  {
+    name: 'Hybrid Power',
+    details: {
+      packagingSize: 6,
+      form: 'solid',
+      color: 'White',
+      price: 'Rs 200/Kg',
+    },
+    imageUrl:
+      'https://5.imimg.com/data5/KR/YO/MY-6124050/colored-coating-powder-500x500.jpg',
+    id: 'hybrid',
+  },
+  {
+    name: 'Hybrid Power',
+    details: {
+      packagingSize: 6,
+      form: 'solid',
+      color: 'White',
+      price: 'Rs 200/Kg',
     },
     imageUrl: 'https://media-public.canva.com/4P4Ec/MADx0r4P4Ec/1/tl.jpg',
     id: 'hybrid',
@@ -241,7 +267,7 @@ const HybridPowderDetails: Array<ProductDetails> = [
       packagingSize: 6,
       form: 'solid',
       color: 'White',
-      price: 200,
+      price: 'Rs 200/Kg',
     },
     imageUrl: 'https://media-public.canva.com/4P4Ec/MADx0r4P4Ec/1/tl.jpg',
     id: 'hybrid',
@@ -252,29 +278,7 @@ const HybridPowderDetails: Array<ProductDetails> = [
       packagingSize: 6,
       form: 'solid',
       color: 'White',
-      price: 200,
-    },
-    imageUrl: 'https://media-public.canva.com/4P4Ec/MADx0r4P4Ec/1/tl.jpg',
-    id: 'hybrid',
-  },
-  {
-    name: 'Hybrid Power',
-    details: {
-      packagingSize: 6,
-      form: 'solid',
-      color: 'White',
-      price: 200,
-    },
-    imageUrl: 'https://media-public.canva.com/4P4Ec/MADx0r4P4Ec/1/tl.jpg',
-    id: 'hybrid',
-  },
-  {
-    name: 'Hybrid Power',
-    details: {
-      packagingSize: 6,
-      form: 'solid',
-      color: 'White',
-      price: 200,
+      price: 'Rs 200/Kg',
     },
     imageUrl: 'https://media-public.canva.com/4P4Ec/MADx0r4P4Ec/1/tl.jpg',
     id: 'hybrid',
