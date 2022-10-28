@@ -7,69 +7,69 @@ import NavigationMenu from '../../Components/NavigationMenu'
 
 const CategoryDetails = [
   {
-    name: 'Hybrid Power',
-    products: 6,
+    name: 'Coating Powder',
+    products: 5,
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur inventore quibusdam reiciendis. Consequatur, vitae',
+      'We are a leading Manufacturer of Traffic White PP Coating Powder and many more....',
     imgURL: HYBRID_IMG,
-    url: 'hybrid-powder',
+    url: 'coating-powder',
   },
   {
-    name: 'Hybrid Power',
-    products: 6,
+    name: 'Polyester Powder',
+    products: 4,
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur inventore quibusdam reiciendis. Consequatur, vitae',
+      'Our product range includes a wide range of Ral Epoxy Polyester Coating Powder...',
     imgURL: 'https://media-public.canva.com/4P4Ec/MADx0r4P4Ec/1/tl.jpg',
-    url: 'powder',
+    url: 'polyester-powder',
   },
   {
-    name: 'Hybrid Power',
-    products: 6,
+    name: 'Metallic Coating Powder',
+    products: 2,
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur inventore quibusdam reiciendis. Consequatur, vitae',
+      'Our range of products include Metallic Coating Powder and Black Metallic Coating Powder.',
     imgURL: 'https://media-public.canva.com/4P4Ec/MADx0r4P4Ec/1/tl.jpg',
-    url: 'hybrid-powder',
+    url: 'metallic-powder',
   },
   {
-    name: 'Hybrid Power',
-    products: 6,
+    name: 'Structure Coating Power',
+    products: 1,
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur inventore quibusdam reiciendis. Consequatur, vitae',
+      'Providing you the best range of Structure Coating Powder with effective & timely delivery.',
+    imgURL: HYBRID_IMG,
+    url: 'structure-powder',
+  },
+  {
+    name: 'Hybrid Coating Powder',
+    products: 1,
+    description:
+      'Manufacturer of a wide range of products which include Hybrid Coating Powder.',
     imgURL: HYBRID_IMG,
     url: 'hybrid-powder',
   },
   {
-    name: 'Hybrid Power',
-    products: 6,
+    name: 'Glass Coating Powder',
+    products: 1,
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur inventore quibusdam reiciendis. Consequatur, vitae',
+      'We are a leading Manufacturer of Glass Coating Powder from Bahadurgarh, India.',
     imgURL: HYBRID_IMG,
-    url: 'hybrid-powder',
+    url: 'glass-powder',
   },
   {
-    name: 'Hybrid Power',
-    products: 6,
+    name: 'Aluminium Coating Power',
+    products: 1,
     description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur inventore quibusdam reiciendis. Consequatur, vitae',
+      "Leading Manufacturer of Aluminium Coating Powder from Bahadurgarh. Click 'View Products'",
     imgURL: HYBRID_IMG,
-    url: 'hybrid-powder',
+    url: 'aluminum-powder',
   },
-  {
-    name: 'Hybrid Power',
-    products: 6,
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur inventore quibusdam reiciendis. Consequatur, vitae',
-    imgURL: HYBRID_IMG,
-    url: 'hybrid-powder',
-  },
-  {
-    name: 'Hybrid Power',
-    products: 6,
-    description:
-      'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur inventore quibusdam reiciendis. Consequatur, vitae',
-    imgURL: HYBRID_IMG,
-    url: 'hybrid-powder',
-  },
+  // {
+  //   name: 'Hybrid Power',
+  //   products: 6,
+  //   description:
+  //     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur inventore quibusdam reiciendis. Consequatur, vitae',
+  //   imgURL: HYBRID_IMG,
+  //   url: 'hybrid-powder',
+  // },
 ]
 
 const Categories = () => {
@@ -135,7 +135,7 @@ const Categories = () => {
                         marginTop: 4,
                       }}
                     >
-                      {i.products} products
+                      {i.products} product(s)
                     </div>
                     <br />
                     <div
