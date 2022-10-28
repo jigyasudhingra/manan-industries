@@ -1,7 +1,6 @@
 import { Box } from '@mui/material'
 import { Icon } from '@iconify/react'
 import React from 'react'
-import ContactForm from './ContactForm'
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -13,32 +12,11 @@ const ContactInfo = () => {
           'linear-gradient(29deg, rgba(72,2,131,1) 0%, rgba(34,1,77,1) 59%, rgba(72,2,131,1) 100%)',
         color: 'white',
       }}
-      id="contact-us"
-      pt={5}
+      pt={7}
       pl={35}
       pr={35}
-      pb={10}
+      pb={7}
     >
-      <div
-        style={{
-          fontSize: 36,
-          fontWeight: 700,
-          letterSpacing: 1.5,
-        }}
-      >
-        CONTACT US
-      </div>
-      <div
-        style={{
-          fontSize: 13,
-          letterSpacing: 1.1,
-          marginBottom: 40,
-          color: 'pink',
-        }}
-      >
-        FEEL FREE TO REACH OUT
-      </div>
-      <ContactForm />
       <Box
         display="flex"
         p={5}

@@ -1,5 +1,6 @@
 import { Box } from '@mui/material'
 import React from 'react'
+import ContactForm from '../../Components/ContactForm'
 import ContactInfo from '../../Components/ContactInfo'
 import NavigationMenu from '../../Components/NavigationMenu'
 import AboutUs from './AboutUs'
@@ -15,6 +16,7 @@ const Home = () => {
       <AboutUs />
       <Rainbow />
       <Testimonials />
+      <ContactForm />
       <ContactInfo />
     </Box>
   )
