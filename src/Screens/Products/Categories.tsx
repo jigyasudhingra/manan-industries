@@ -171,39 +171,16 @@ const Categories = () => {
         </div>
         <br />
         <div>
-          Epoxy powder Coating are suitable to provide optimal hardness and a
-          protective chemical resistance to your products. Epoxy powder Coating
-          are suggested for products that need to have excellent resistance to
-          chemicals and corrosion. Mostly these Coating are recommended for
-          items like water immersed merchandise, laundry machines, chemical
-          pipelines, and others.
-          <br />
-          <br />
-          Fortunecoat is a reputed company that manufactures and supplies these
-          Epoxy powder Coating. The products manufactured by us give a durable
-          finish to the products and they are able to stay protected from
-          chemicals impact and other damages. These Coating have smart static
-          charging properties and potency to transfer comfortably. It is
-          recommended for industrial parts and equipment that need a spherical
-          coating. This epoxy powder coating usually gives good protection
-          against the impact of corrosion and abrasion.
-          <br />
-          <br />
-          The perfect combination of its physical, chemical, mechanical, and
-          thermal properties is what makes Epoxy a perfect solution to be used
-          as a protection for different types of products. They are very
-          durable, offer excellent hardness and have arguably the best chemical
-          and corrosion resistance of all available powders. Another plus of
-          this type of powder is its ease of use and a wide range of cure
-          schedules. Epoxies adhere to metals extremely well, with various
-          pretreatments of the metal providing excellent adhesion, including
-          phosphate coating and sandblasting.
-          <br />
-          <br />
-          Epoxies is that many primers are epoxies due to their adhesion
-          strength and corrosion resistance. Since they do not handle the sun
-          well, their use as a pre-coat underneath another paint type utilizes
-          their strengths while covering their weaknesses.
+          These powder coatings are based on polyester and epoxy resins. Due to
+          their excellent all-round properties, our hybrid powder coatings are
+          the most used powder coatings in the coatings sector. They are
+          versatile in use and meet many requirements for indoor goods. These
+          are the widely used powder Coating. They offer excellent hardness and
+          have the best chemical and corrosion resistance of all available
+          powders.Metal office furniture, shelves, household appliances, stoves
+          and kitchen hoods, camping articles, radiators, heating plates, water
+          heaters, household articles, machinery, computer cabinets and any
+          metal object for indoor can be powder-coated
         </div>
       </Box>
       <Box
@@ -228,39 +205,32 @@ const Categories = () => {
         </div>
         <br />
         <div>
-          Epoxy powder Coating are suitable to provide optimal hardness and a
-          protective chemical resistance to your products. Epoxy powder Coating
-          are suggested for products that need to have excellent resistance to
-          chemicals and corrosion. Mostly these Coating are recommended for
-          items like water immersed merchandise, laundry machines, chemical
-          pipelines, and others.
-          <br />
-          <br />
-          Fortunecoat is a reputed company that manufactures and supplies these
-          Epoxy powder Coating. The products manufactured by us give a durable
-          finish to the products and they are able to stay protected from
-          chemicals impact and other damages. These Coating have smart static
-          charging properties and potency to transfer comfortably. It is
-          recommended for industrial parts and equipment that need a spherical
-          coating. This epoxy powder coating usually gives good protection
-          against the impact of corrosion and abrasion.
-          <br />
-          <br />
-          The perfect combination of its physical, chemical, mechanical, and
-          thermal properties is what makes Epoxy a perfect solution to be used
-          as a protection for different types of products. They are very
-          durable, offer excellent hardness and have arguably the best chemical
-          and corrosion resistance of all available powders. Another plus of
-          this type of powder is its ease of use and a wide range of cure
-          schedules. Epoxies adhere to metals extremely well, with various
-          pretreatments of the metal providing excellent adhesion, including
-          phosphate coating and sandblasting.
-          <br />
-          <br />
-          Epoxies is that many primers are epoxies due to their adhesion
-          strength and corrosion resistance. Since they do not handle the sun
-          well, their use as a pre-coat underneath another paint type utilizes
-          their strengths while covering their weaknesses.
+          Pure Polyester Powder Coatings are based on carboxyl terminated
+          polyester resin and TGIC mainly used for exterior purpose and external
+          application with the excellent outdoor durability and good chemical
+          resistance with very good adhesion properties.The two most widely used
+          types of polyester powder are TGIC (tri glycidyl isocyanurate) and non
+          TGIC, which is also known as TGIC free called Primid Technology. Both
+          TGIC and TGIC-free polyesters offer good mechanical resistance,
+          including great flexibility, impact resistance, good chemical
+          resistance and very good outdoor durability.
+          <br /> <br />
+          Polyesters will also provide good over bake resistance to yellowing,
+          which makes them really easy to use and Standard industrial Grade
+          Polyesters will offer five years of good UV and weather resistance,
+          thats why these are work well for all interior and some exterior
+          applications. A huge advantage of standard pure polyesters is the
+          enormous choice of colors, gloss levels and special effects theyre
+          available in. Its almost limitless! Polyesters have all important
+          properties and are a common choice for many applications. TGIC-free
+          polyesters offer all the advantages as TGIC Polyesters.They can also
+          give a higher first pass transfer efficiency, but are more sensitive
+          to excess film thickness. LED Street Lights, Canopies, French Doors,
+          Agricultural Equipments, Architectural Extrusions, Window Frames,
+          Garden Furniture, Leisure Equipments, Outdoor Lighting Posts, Shades
+          And Signs, Bicycle And Cycle Frames, Garage Doors, Luminaire Fittings
+          And Motor Car Components: Radiators, Wheels, Bumpers, Window Fittings,
+          Wiper Blades are its uses.
         </div>
       </Box>
       <Box
