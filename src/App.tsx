@@ -5,6 +5,7 @@ import ProductScreen from './Screens/Products'
 import './App.css'
 import Home from './Screens/Home'
 import Listing from './Screens/Products/Listing'
+import ContactUs from './Screens/ContactUs'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/products" element={<ProductScreen />} />
           <Route path="/products/:category" element={<Listing />} />
+          <Route path="/contact-us/" element={<ContactUs />} />
         </Routes>
       </Box>
     </BrowserRouter>

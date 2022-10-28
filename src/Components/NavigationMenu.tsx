@@ -15,11 +15,11 @@ const NAVIGATION_LINKS: { id: string; url: string; label: string }[] = [
     url: 'products',
     label: 'Products',
   },
-  {
-    id: 'testimonials',
-    url: 'testimonials',
-    label: 'Testimonials',
-  },
+  // {
+  //   id: 'testimonials',
+  //   url: 'testimonials',
+  //   label: 'Testimonials',
+  // },
   {
     id: 'contact-us',
     url: 'contact-us',
@@ -34,18 +34,13 @@ const PRODUCT_NAVIGATION = [
     label: 'Home',
   },
   {
-    id: 'about-us',
-    url: '/',
-    label: 'About Us',
-  },
-  {
     id: 'products',
     url: '/products',
     label: 'Products',
   },
   {
     id: 'contact-us',
-    url: '/',
+    url: '/contact-us',
     label: 'Contact Us',
   },
 ]
@@ -91,7 +86,7 @@ const NavigationMenu = (props: NavigationProps) => {
       >
         <Box
           alignSelf="center"
-          width={isDeviceSm ? '90%' : '40%'}
+          width={isDeviceSm ? '70%' : '30%'}
           style={{
             backgroundColor: 'rgba(86, 19, 180, 0.67)',
             borderRadius: 50,
@@ -110,7 +105,7 @@ const NavigationMenu = (props: NavigationProps) => {
                   duration={1000}
                   style={{
                     color: 'white',
-                    fontSize: 13,
+                    fontSize: isDeviceSm ? 11 : 13,
                     letterSpacing: 0.6,
                     fontWeight: isDeviceSm ? 400 : 600,
                   }}
