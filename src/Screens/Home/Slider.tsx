@@ -10,7 +10,6 @@ import slider1 from '../../Assets/slider1.jpg'
 import slider2 from '../../Assets/slider2.jpg'
 import slider3 from '../../Assets/slider3.jpg'
 import slider4 from '../../Assets/slider4.jpg'
-import slider5 from '../../Assets/slider5.jpg'
 import slider6 from '../../Assets/slider6.jpg'
 import certificate1 from '../../Assets/certificate1.jpg'
 import certificate2 from '../../Assets/certificate2.jpg'
@@ -26,7 +25,6 @@ const ImageSlider = () => {
     slider2,
     slider3,
     slider4,
-    slider5,
     slider6,
     certificate1,
     certificate2,
@@ -49,13 +47,12 @@ const ImageSlider = () => {
         color: 'white',
       }}
     >
-      <Box py={isDeviceSm ? 8 : 3}>
+      <Box py={3}>
         <Slider
           centerPadding="0"
           arrows={false}
-          slidesToShow={3}
+          slidesToShow={isDeviceSm ? 2 : 3}
           slidesToScroll={1}
-          dots
           autoplaySpeed={0}
           infinite
           pauseOnHover={false}

@@ -1,5 +1,6 @@
 import { Box } from '@mui/material'
 import React from 'react'
+import { Icon } from '@iconify/react'
 import ContactForm from './ContactForm'
 import MediaQuery from './MediaQuery'
 
@@ -137,10 +138,9 @@ const ContactInfo = () => {
               <Box ml={1}>www.mananindustries.in</Box>
             </Box>
           </Box> */}
-          {!isDeviceSm && (
-            <>
-              <br />
-              <div
+          <>
+            <br />
+            {/* <div
                 style={{
                   fontSize: 16,
                   fontWeight: 700,
@@ -149,9 +149,37 @@ const ContactInfo = () => {
                 }}
               >
                 HELPFUL LINK
+              </div> */}
+            <div
+              style={{
+                fontSize: 12,
+                display: 'flex',
+                color: 'white',
+                justifyContent: isDeviceSm ? 'center' : '',
+              }}
+            >
+              <div style={{ marginRight: isDeviceSm ? 0 : 10 }}>
+                <a href="https://instagram.com/rainbow_coatings/">
+                  <Icon
+                    icon="akar-icons:instagram-fill"
+                    color="white"
+                    style={{
+                      fontSize: isDeviceSm ? 25 : 38,
+                      marginBottom: -7,
+                    }}
+                  />
+                </a>
+                <span
+                  style={{
+                    marginLeft: 5,
+                    color: 'white',
+                    textDecoration: 'none',
+                  }}
+                >
+                  rainbow_coatings
+                </span>
               </div>
-              <div style={{ fontSize: 12, display: 'flex', color: 'white' }}>
-                <div>
+              {/* <div>
                   <a style={{ color: 'white' }} href="/products">
                     Products
                   </a>
@@ -160,10 +188,9 @@ const ContactInfo = () => {
                   <a style={{ color: 'white' }} href="/contact-us">
                     Contact Us
                   </a>
-                </div>
-              </div>
-            </>
-          )}
+                </div> */}
+            </div>
+          </>
         </Box>
       </Box>
     </Box>

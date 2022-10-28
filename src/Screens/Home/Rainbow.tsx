@@ -10,7 +10,7 @@ const Rainbow = () => {
     <div style={styles.rainbowBody} id="products">
       <div
         style={{
-          marginLeft: isDeviceSm ? '-27%' : '0%',
+          marginLeft: isDeviceSm ? '-16%' : '0%',
         }}
       >
         <img src={rainbowPic} width={isDeviceSm ? 380 : '70%'} alt="" />
@@ -41,7 +41,7 @@ const Rainbow = () => {
       <div>
         <Button
           onClick={() => {
-            window.location.href = '/products'
+            window.location.href = '/#/products'
           }}
           style={{
             borderRadius: 20,

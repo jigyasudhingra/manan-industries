@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import ProductScreen from './Screens/Products'
 import './App.css'
 import Home from './Screens/Home'
@@ -9,7 +9,7 @@ import ContactUs from './Screens/ContactUs'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Box className="App">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -18,7 +18,7 @@ const App = () => {
           <Route path="/contact-us/" element={<ContactUs />} />
         </Routes>
       </Box>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
