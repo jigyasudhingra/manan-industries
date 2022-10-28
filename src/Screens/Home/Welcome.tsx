@@ -3,6 +3,7 @@ import { createStyles, makeStyles } from '@mui/styles'
 import React from 'react'
 import homepagePic from '../../Assets/homepage2.jpg'
 import logoPic from '../../Assets/logoo.jpg'
+import strike from '../../Assets/strike.png'
 import MediaQuery from '../../Components/MediaQuery'
 
 const Welcome = () => {
@@ -10,28 +11,44 @@ const Welcome = () => {
   const { isDeviceSm } = MediaQuery()
   return (
     <Box pt={15} className={classes.background} pb={20}>
-      <img src={logoPic} alt="f" width="5%" className={classes.logo} />
-      <div className={classes.welcomeText}>
+      <img
+        src={logoPic}
+        alt="f"
+        width={isDeviceSm ? '15%' : '5%'}
+        className={classes.logo}
+      />
+      <div
+        style={{
+          display: 'relative',
+          color: 'white',
+          fontSize: isDeviceSm ? 30 : 72,
+          fontWeight: 700,
+          letterSpacing: 2,
+        }}
+      >
         WELCOME TO <br /> MANAN INDUSTRIES
       </div>
       <Box>
-        <div className={classes.sloganText}>Believe in Quality</div>
-        {/* <div>
-          <img src={strike} alt="strike" width="10%" />
-        </div> */}
+        <div
+          style={{
+            fontWeight: 600,
+            fontSize: isDeviceSm ? 20 : 40,
+            color: 'white',
+            fontFamily: `'Pinyon Script', cursive`,
+            letterSpacing: 2,
+          }}
+        >
+          Believe in Quality
+        </div>
+        <div
+          style={{
+            marginTop: isDeviceSm ? '-4%' : '-0.8%',
+            marginLeft: isDeviceSm ? '-20%' : '-7.8%',
+          }}
+        >
+          <img src={strike} alt="strike" width={isDeviceSm ? '15%' : '10%'} />
+        </div>
       </Box>
-      {/* <Box
-        display="flex"
-        width="100%"
-        pt={6}
-        pb={6}
-        className="animate__animated animate__bounce animate__infinite animate__slower "
-      >
-        <Box width="100%" />
-        <Box width="100%">
-          <Box className={classes.verticalLine} />
-        </Box>
-      </Box> */}
     </Box>
   )
 }

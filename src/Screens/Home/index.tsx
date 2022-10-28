@@ -4,12 +4,13 @@ import ContactInfo from '../../Components/ContactInfo'
 import NavigationMenu from '../../Components/NavigationMenu'
 import AboutUs from './AboutUs'
 import Rainbow from './Rainbow'
+import Welcome from './Welcome'
 
 const Home = () => {
   return (
     <Box width="100%">
       <NavigationMenu ProductsPage={false} />
-      {/* <Welcome /> */}
+      <Welcome />
       <AboutUs />
       <Rainbow />
       {/* <Testimonials /> */}
