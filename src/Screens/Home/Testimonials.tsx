@@ -1,5 +1,6 @@
 import { Box } from '@mui/material'
 import React from 'react'
+import ImageSlider from './Slider'
 
 const Details = [
   {
@@ -35,6 +36,7 @@ const Testimonials = () => {
       pr={22}
       id="testimonials"
     >
+      <ImageSlider />
       <div
         style={{
           fontSize: 40,

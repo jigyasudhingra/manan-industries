@@ -80,7 +80,7 @@ const Categories = () => {
     <Box>
       <NavigationMenu ProductsPage />
       <Box
-        p={10}
+        p={isDeviceSm ? 7 : 10}
         pt={15}
         sx={{
           background: `linear-gradient(29deg, rgba(72,2,131,1) 0%, rgba(34,1,77,1) 59%, rgba(72,2,131,1) 100%)`,
