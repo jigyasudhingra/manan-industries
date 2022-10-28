@@ -23,6 +23,8 @@ const Rainbow = () => {
           width: isDeviceSm ? '100%' : '60%',
           display: 'inline-flex',
           marginBottom: isDeviceSm ? 40 : 50,
+          textAlign: 'justify',
+          textJustify: 'inter-word',
         }}
       >
         Rainbow Powder Coating, specialist in RAL and PENTONE Series. Our range

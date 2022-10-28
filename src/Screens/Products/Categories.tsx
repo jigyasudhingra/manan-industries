@@ -81,7 +81,7 @@ const Categories = () => {
                     <img
                       src={i.imgURL}
                       alt={i.url}
-                      width={isDeviceSm ? 200 : 180}
+                      width="100%"
                       style={{
                         borderRadius: 10,
                       }}
@@ -174,17 +174,39 @@ const Categories = () => {
           PURE POLYESTER POWDER
         </div>
         <br />
-        <div>
-          These powder coatings are based on polyester and epoxy resins. Due to
-          their excellent all-round properties, our hybrid powder coatings are
-          the most used powder coatings in the coatings sector. They are
-          versatile in use and meet many requirements for indoor goods. These
-          are the widely used powder Coating. They offer excellent hardness and
-          have the best chemical and corrosion resistance of all available
-          powders.Metal office furniture, shelves, household appliances, stoves
-          and kitchen hoods, camping articles, radiators, heating plates, water
-          heaters, household articles, machinery, computer cabinets and any
-          metal object for indoor can be powder-coated
+        <div
+          style={{
+            textAlign: 'justify',
+            textJustify: 'inter-word',
+          }}
+        >
+          Pure Polyester Powder Coatings are based on carboxyl terminated
+          polyester resin and TGIC mainly used for exterior purpose and external
+          application with the excellent outdoor durability and good chemical
+          resistance with very good adhesion properties.The two most widely used
+          types of polyester powder are TGIC (tri glycidyl isocyanurate) and non
+          TGIC, which is also known as TGIC free called Primid Technology. Both
+          TGIC and TGIC-free polyesters offer good mechanical resistance,
+          including great flexibility, impact resistance, good chemical
+          resistance and very good outdoor durability.
+          <br /> <br />
+          Polyesters will also provide good over bake resistance to yellowing,
+          which makes them really easy to use and Standard industrial Grade
+          Polyesters will offer five years of good UV and weather resistance,
+          thats why these are work well for all interior and some exterior
+          applications. A huge advantage of standard pure polyesters is the
+          enormous choice of colors, gloss levels and special effects theyre
+          available in. Its almost limitless! Polyesters have all important
+          properties and are a common choice for many applications.
+          <br /> <br />
+          TGIC-free polyesters offer all the advantages as TGIC Polyesters.They
+          can also give a higher first pass transfer efficiency, but are more
+          sensitive to excess film thickness. LED Street Lights, Canopies,
+          French Doors, Agricultural Equipments, Architectural Extrusions,
+          Window Frames, Garden Furniture, Leisure Equipments, Outdoor Lighting
+          Posts, Shades And Signs, Bicycle And Cycle Frames, Garage Doors,
+          Luminaire Fittings And Motor Car Components: Radiators, Wheels,
+          Bumpers, Window Fittings, Wiper Blades are its uses.
         </div>
       </Box>
       <Box
@@ -208,57 +230,12 @@ const Categories = () => {
           PURE EPOXY POWDER
         </div>
         <br />
-        <div>
-          Pure Polyester Powder Coatings are based on carboxyl terminated
-          polyester resin and TGIC mainly used for exterior purpose and external
-          application with the excellent outdoor durability and good chemical
-          resistance with very good adhesion properties.The two most widely used
-          types of polyester powder are TGIC (tri glycidyl isocyanurate) and non
-          TGIC, which is also known as TGIC free called Primid Technology. Both
-          TGIC and TGIC-free polyesters offer good mechanical resistance,
-          including great flexibility, impact resistance, good chemical
-          resistance and very good outdoor durability.
-          <br /> <br />
-          Polyesters will also provide good over bake resistance to yellowing,
-          which makes them really easy to use and Standard industrial Grade
-          Polyesters will offer five years of good UV and weather resistance,
-          thats why these are work well for all interior and some exterior
-          applications. A huge advantage of standard pure polyesters is the
-          enormous choice of colors, gloss levels and special effects theyre
-          available in. Its almost limitless! Polyesters have all important
-          properties and are a common choice for many applications. TGIC-free
-          polyesters offer all the advantages as TGIC Polyesters.They can also
-          give a higher first pass transfer efficiency, but are more sensitive
-          to excess film thickness. LED Street Lights, Canopies, French Doors,
-          Agricultural Equipments, Architectural Extrusions, Window Frames,
-          Garden Furniture, Leisure Equipments, Outdoor Lighting Posts, Shades
-          And Signs, Bicycle And Cycle Frames, Garage Doors, Luminaire Fittings
-          And Motor Car Components: Radiators, Wheels, Bumpers, Window Fittings,
-          Wiper Blades are its uses.
-        </div>
-      </Box>
-      <Box
-        sx={{
-          backgroundColor: 'rgba(72,2,131,1)',
-          color: 'white',
-          fontSize: 12,
-        }}
-        p={8}
-        pl={isDeviceSm ? '10%' : '25%'}
-        pr={isDeviceSm ? '10%' : '25%'}
-        id="hybrid-powder"
-      >
         <div
           style={{
-            fontSize: isDeviceSm ? 25 : 36,
-            fontWeight: 700,
-            letterSpacing: 1.5,
+            textAlign: 'justify',
+            textJustify: 'inter-word',
           }}
         >
-          HYBRID COATING POWDER
-        </div>
-        <br />
-        <div>
           Epoxy powder Coating are suitable to provide optimal hardness and a
           protective chemical resistance to your products. Epoxy powder Coating
           are suggested for products that need to have excellent resistance to
@@ -292,6 +269,47 @@ const Categories = () => {
           strength and corrosion resistance. Since they do not handle the sun
           well, their use as a pre-coat underneath another paint type utilizes
           their strengths while covering their weaknesses.
+        </div>
+      </Box>
+      <Box
+        sx={{
+          backgroundColor: 'rgba(72,2,131,1)',
+          color: 'white',
+          fontSize: 12,
+        }}
+        p={8}
+        pl={isDeviceSm ? '10%' : '25%'}
+        pr={isDeviceSm ? '10%' : '25%'}
+        id="hybrid-powder"
+      >
+        <div
+          style={{
+            fontSize: isDeviceSm ? 25 : 36,
+            fontWeight: 700,
+            letterSpacing: 1.5,
+          }}
+        >
+          HYBRID COATING POWDER
+        </div>
+        <br />
+        <div
+          style={{
+            textAlign: 'justify',
+            textJustify: 'inter-word',
+          }}
+        >
+          These powder coatings are based on polyester and epoxy resins. Due to
+          their excellent all-round properties, our hybrid powder coatings are
+          the most used powder coatings in the coatings sector. They are
+          versatile in use and meet many requirements for indoor goods. These
+          are the widely used powder Coating.
+          <br /> <br />
+          They offer excellent hardness and have the best chemical and corrosion
+          resistance of all available powders.Metal office furniture, shelves,
+          household appliances, stoves and kitchen hoods, camping articles,
+          radiators, heating plates, water heaters, household articles,
+          machinery, computer cabinets and any metal object for indoor can be
+          powder-coated
         </div>
       </Box>
     </Box>

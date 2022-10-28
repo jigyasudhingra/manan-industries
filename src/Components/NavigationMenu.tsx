@@ -118,7 +118,7 @@ const NavigationMenu = (props: NavigationProps) => {
                   to={i.url}
                   style={{
                     color: 'white',
-                    fontSize: 13,
+                    fontSize: isDeviceSm ? 12 : 13,
                     letterSpacing: 0.6,
                     fontWeight: isDeviceSm ? 400 : 600,
                     textDecoration: 'none',

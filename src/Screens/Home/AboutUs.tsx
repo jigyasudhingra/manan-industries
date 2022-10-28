@@ -19,12 +19,12 @@ const AboutUs = () => {
         <Box
           width={!isDeviceSm ? '100%' : '80%'}
           style={{
-            textAlignLast: isDeviceSm ? 'center' : 'left',
+            // textAlignLast: isDeviceSm ? 'center' : 'left',
             fontSize: 14,
           }}
           textAlign={isDeviceSm ? 'center' : 'left'}
           p={isDeviceSm ? 2 : 10}
-          pt={15}
+          pt={isDeviceSm ? 5 : 15}
           pl="10%"
           pr={isDeviceSm ? '10%' : 2}
         >
@@ -38,17 +38,24 @@ const AboutUs = () => {
           >
             ABOUT US
           </div>
-          <p>
+          <div
+            style={{
+              marginTop: 10,
+              marginBottom: 10,
+              textAlign: 'justify',
+              textJustify: 'inter-word',
+            }}
+          >
             Established in the year 2003, Manan Industries is engaged as
             Manufacturer and Wholesaler of Polyester Powder Coating, Structure
             Powder Coating, Metallic Powder Coating, Hybrid Powder Coating, etc.
-          </p>
-          <p>
+            <br />
+            <br />
             Further, our range is highly demanded in for its optimum quality.
             All the efforts of the company to ensure excellent quality products
             for their customers has enabled them to build long lasting business
             relationships with their clients.
-          </p>
+          </div>
         </Box>
         <Box
           width="100%"
