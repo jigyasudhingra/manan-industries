@@ -89,7 +89,7 @@ const ContactInfo = () => {
           <div style={{ fontSize: 23, fontWeight: 700, letterSpacing: 1.1 }}>
             LALIT AHUJA
           </div>
-          <div style={{ fontSize: 12 }}>Plot No. 228, MIE Industrial Area</div>
+          <div style={{ fontSize: 12 }}>+91-9312891429 , +91-9215891429</div>
           <div
             style={{
               fontSize: 23,
@@ -100,7 +100,7 @@ const ContactInfo = () => {
           >
             MANAN AHUJA
           </div>
-          <div style={{ fontSize: 12 }}>Plot No. 228, MIE Industrial Area</div>
+          <div style={{ fontSize: 12 }}>+91-9599666058</div>
           <Box
             width="fit-content"
             sx={{

@@ -3,22 +3,29 @@ import React from 'react'
 
 const Details = [
   {
-    name: 'Kiara Austen',
-    company: 'Brooknew Ltd.',
-    review:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam esse blanditiis quos tempore quasi enim!',
+    name: 'Mini Metro',
+    company: '',
+    review: '',
   },
   {
-    name: 'Kiara Austen',
-    company: 'Brooknew Ltd.',
-    review:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam esse blanditiis quos tempore quasi enim!',
+    name: ' Micron Coating Pvt Ltd.',
+    company: '',
+    review: '',
   },
   {
-    name: 'Kiara Austen',
-    company: 'Brooknew Ltd.',
-    review:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam esse blanditiis quos tempore quasi enim!',
+    name: 'Shyam Powder Coatings',
+    company: '',
+    review: '',
+  },
+  {
+    name: 'RSS Steel Company',
+    company: '',
+    review: '',
+  },
+  {
+    name: 'Shyam Powder Coatings',
+    company: '',
+    review: '',
   },
 ]
 

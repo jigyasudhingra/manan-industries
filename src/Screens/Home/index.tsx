@@ -4,7 +4,6 @@ import ContactInfo from '../../Components/ContactInfo'
 import NavigationMenu from '../../Components/NavigationMenu'
 import AboutUs from './AboutUs'
 import Rainbow from './Rainbow'
-import Testimonials from './Testimonials'
 import Welcome from './Welcome'
 
 const Home = () => {
@@ -14,7 +13,7 @@ const Home = () => {
       <Welcome />
       <AboutUs />
       <Rainbow />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <ContactInfo />
     </Box>
   )

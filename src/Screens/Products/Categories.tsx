@@ -2,74 +2,37 @@ import React from 'react'
 import { Box, Button, Grid, Theme } from '@mui/material'
 import { createStyles, makeStyles } from '@mui/styles'
 import MediaQuery from '../../Components/MediaQuery'
-import HYBRID_IMG from '../../Assets/hybrid.jpeg'
 import NavigationMenu from '../../Components/NavigationMenu'
+import rainbowPic from '../../Assets/rainbow.jpg'
+import pureEpoxy from '../../Assets/pureEpoxy.jpg'
+import purePolyester from '../../Assets/purePolyester.jpg'
+import hybridImg from '../../Assets/hybrid.jpg'
 
 const CategoryDetails = [
   {
-    name: 'Coating Powder',
-    products: 5,
-    description:
-      'We are a leading Manufacturer of Traffic White PP Coating Powder and many more....',
-    imgURL: HYBRID_IMG,
-    url: 'coating-powder',
-  },
-  {
-    name: 'Polyester Powder',
+    name: 'Pure Polyester Powder',
     products: 4,
     description:
-      'Our product range includes a wide range of Ral Epoxy Polyester Coating Powder...',
-    imgURL: 'https://media-public.canva.com/4P4Ec/MADx0r4P4Ec/1/tl.jpg',
+      'Polyester powder coating is recommended for exterior coating due to its high durability against UV rays',
+    imgURL: purePolyester,
     url: 'polyester-powder',
   },
   {
-    name: 'Metallic Coating Powder',
-    products: 2,
-    description:
-      'Our range of products include Metallic Coating Powder and Black Metallic Coating Powder.',
-    imgURL: 'https://media-public.canva.com/4P4Ec/MADx0r4P4Ec/1/tl.jpg',
-    url: 'metallic-powder',
-  },
-  {
-    name: 'Structure Coating Power',
+    name: 'Pure Epoxy Powder',
     products: 1,
     description:
-      'Providing you the best range of Structure Coating Powder with effective & timely delivery.',
-    imgURL: HYBRID_IMG,
+      'Epoxy powder coating is a thermoset polymer coating that is majorly used in Auto Mobile Industries due to excellent adhesion.',
+    imgURL: pureEpoxy,
     url: 'structure-powder',
   },
   {
     name: 'Hybrid Coating Powder',
     products: 1,
     description:
-      'Manufacturer of a wide range of products which include Hybrid Coating Powder.',
-    imgURL: HYBRID_IMG,
+      'These hybrid powder coatings represent a compromise between the performance of epoxies and polyesters',
+    imgURL: hybridImg,
     url: 'hybrid-powder',
   },
-  {
-    name: 'Glass Coating Powder',
-    products: 1,
-    description:
-      'We are a leading Manufacturer of Glass Coating Powder from Bahadurgarh, India.',
-    imgURL: HYBRID_IMG,
-    url: 'glass-powder',
-  },
-  {
-    name: 'Aluminium Coating Power',
-    products: 1,
-    description:
-      "Leading Manufacturer of Aluminium Coating Powder from Bahadurgarh. Click 'View Products'",
-    imgURL: HYBRID_IMG,
-    url: 'aluminum-powder',
-  },
-  // {
-  //   name: 'Hybrid Power',
-  //   products: 6,
-  //   description:
-  //     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam tenetur inventore quibusdam reiciendis. Consequatur, vitae',
-  //   imgURL: HYBRID_IMG,
-  //   url: 'hybrid-powder',
-  // },
 ]
 
 const Categories = () => {
@@ -91,6 +54,9 @@ const Categories = () => {
         textAlign="center"
         style={{ textAlignLast: '-webkit-center' as any }}
       >
+        <div>
+          <img src={rainbowPic} alt="" width="50%" />
+        </div>
         <Box
           pl={!isDeviceSm ? 20 : 0}
           pr={!isDeviceSm ? 20 : 0}
@@ -128,7 +94,7 @@ const Categories = () => {
                     >
                       {i.name}
                     </div>
-                    <div
+                    {/* <div
                       style={{
                         color: 'pink',
                         fontSize: 12,
@@ -136,7 +102,7 @@ const Categories = () => {
                       }}
                     >
                       {i.products} product(s)
-                    </div>
+                    </div> */}
                     <br />
                     <div
                       style={{
@@ -147,7 +113,7 @@ const Categories = () => {
                       {i.description}
                     </div>
                     <br />
-                    <Button
+                    {/* <Button
                       onClick={() => {
                         window.location.href = `/products/${i.url}`
                       }}
@@ -159,6 +125,17 @@ const Categories = () => {
                       }}
                     >
                       VIEW PRODUCTS
+                    </Button> */}
+                    <Button
+                      onClick={() => {}}
+                      style={{
+                        color: 'pink',
+                        fontSize: 12,
+                        letterSpacing: 1.1,
+                        fontFamily: `'Poppins', sans-serif `,
+                      }}
+                    >
+                      KNOW MORE
                     </Button>
                   </Box>
                 </Box>
