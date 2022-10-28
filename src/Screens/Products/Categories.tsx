@@ -8,6 +8,7 @@ import rainbowPic from '../../Assets/rainbow.jpg'
 import pureEpoxy from '../../Assets/pureEpoxy.jpg'
 import purePolyester from '../../Assets/purePolyester.jpg'
 import hybridImg from '../../Assets/hybrid.jpg'
+import sectionThree from '../../Assets/sectionThree.jpg'
 
 const CategoryDetails = [
   {
@@ -30,7 +31,7 @@ const CategoryDetails = [
     name: 'Hybrid Coating Powder',
     products: 1,
     description:
-      'These hybrid powder coatings represent a compromise between the performance of epoxies and polyesters',
+      'These hybrid powder coatings represent a compromise between the performance of epoxies as',
     imgURL: hybridImg,
     url: 'hybrid-powder',
   },
@@ -48,7 +49,9 @@ const Categories = () => {
         pt={15}
         sx={{
           // background: `linear-gradient(29deg, rgba(72,2,131,1) 0%, rgba(34,1,77,1) 59%, rgba(72,2,131,1) 100%)`,
-          backgroundColor: 'rgba(34,1,77,1)',
+          // backgroundColor: 'rgba(34,1,77,1)',
+          backgroundImage: `url(${sectionThree})`,
+          backgroundSize: 'cover',
           letterSpacing: 0.5,
           color: 'white',
         }}
@@ -78,7 +81,7 @@ const Categories = () => {
                     <img
                       src={i.imgURL}
                       alt={i.url}
-                      width="100%"
+                      width={isDeviceSm ? 200 : 180}
                       style={{
                         borderRadius: 10,
                       }}
@@ -91,6 +94,7 @@ const Categories = () => {
                         textTransform: 'uppercase',
                         letterSpacing: 1.5,
                         fontWeight: 700,
+                        marginTop: 10,
                         color: '#D1CECE',
                       }}
                     >
@@ -158,7 +162,7 @@ const Categories = () => {
         p={8}
         pl={isDeviceSm ? '10%' : '25%'}
         pr={isDeviceSm ? '10%' : '25%'}
-        id="polyester-powder"
+        // id="polyester-powder"
       >
         <div
           style={{

@@ -1,5 +1,5 @@
-import React from 'react'
 import { Button } from '@mui/material'
+import React from 'react'
 import rainbowPic from '../../Assets/rainbow.png'
 import sectionThree from '../../Assets/sectionThree.jpg'
 import MediaQuery from '../../Components/MediaQuery'
@@ -10,10 +10,10 @@ const Rainbow = () => {
     <div style={styles.rainbowBody} id="products">
       <div
         style={{
-          marginLeft: isDeviceSm ? '-16%' : '0%',
+          marginLeft: isDeviceSm ? '-8%' : '0%',
         }}
       >
-        <img src={rainbowPic} width={isDeviceSm ? 380 : '70%'} alt="" />
+        <img src={rainbowPic} width={isDeviceSm ? 300 : '70%'} alt="" />
       </div>
       <br />
       <div
