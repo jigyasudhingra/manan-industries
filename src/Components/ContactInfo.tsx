@@ -1,4 +1,3 @@
-import { Icon } from '@iconify/react'
 import { Box } from '@mui/material'
 import React from 'react'
 import ContactForm from './ContactForm'
@@ -11,20 +10,25 @@ const ContactInfo = () => {
   return (
     <Box
       sx={{
-        background:
-          'linear-gradient(29deg, rgba(72,2,131,1) 0%, rgba(34,1,77,1) 59%, rgba(72,2,131,1) 100%)',
+        background: 'rgba(34,1,77,1)',
         color: 'white',
       }}
-      pt={isDeviceSm ? 5 : 7}
-      pl={isDeviceSm ? 5 : 35}
-      pr={isDeviceSm ? 5 : 35}
-      pb={isDeviceSm ? 5 : 7}
+      // pt={isDeviceSm ? 5 : 7}
+      // pl={isDeviceSm ? 5 : 35}
+      // pr={isDeviceSm ? 5 : 35}
+      // pb={isDeviceSm ? 5 : 7}
     >
       <ContactForm />
       <Box
         display={!isDeviceSm ? 'flex' : ''}
         p={5}
-        sx={{ backgroundColor: '#420d8c', borderRadius: 6 }}
+        sx={{
+          backgroundColor: '#420d8c',
+          borderRadius: 0,
+          textAlignLast: isDeviceSm ? 'center' : '',
+        }}
+        pl={!isDeviceSm ? '17%' : 5}
+        pr={!isDeviceSm ? '17%' : 5}
       >
         <Box
           width={isDeviceSm ? '100%' : '50%'}
@@ -32,7 +36,7 @@ const ContactInfo = () => {
           pl={isDeviceSm ? 0 : 6}
           textAlign="left"
         >
-          <div style={{ fontSize: 23, fontWeight: 700, letterSpacing: 1.1 }}>
+          <div style={{ fontSize: 16, fontWeight: 700, letterSpacing: 1.1 }}>
             MANAN INDUSTRIES
           </div>
           <div style={{ fontSize: 12 }}>
@@ -42,8 +46,26 @@ const ContactInfo = () => {
             <br />
             Haryana, India
           </div>
-          {!isDeviceSm && <br />}
-          <Box
+          <br />
+          <div style={{ fontSize: 16, fontWeight: 700, letterSpacing: 1.1 }}>
+            EMAIL
+          </div>
+          <div style={{ fontSize: 12 }}>
+            <a
+              style={{ color: 'white', textDecoration: 'none' }}
+              href="mailto:rainbow_coat@yahoo.com"
+            >
+              rainbow_coat@yahoo.com
+            </a>
+            <br />
+            <a
+              style={{ color: 'white', textDecoration: 'none' }}
+              href="mailto:mananahuja77@gmail.com"
+            >
+              mananahuja77@gmail.com
+            </a>
+          </div>
+          {/* <Box
             width="fit-content"
             ml={isDeviceSm ? -1 : 0}
             sx={{
@@ -67,23 +89,23 @@ const ContactInfo = () => {
               />
               <Box ml={1}>rainbow_coat@yahoo.com</Box>
             </Box>
-          </Box>
+          </Box> */}
         </Box>
         <Box
           width={isDeviceSm ? '100%' : '50%'}
           p={1}
           pl={isDeviceSm ? 0 : 6}
           pt={isDeviceSm ? 2.5 : 1}
-          borderLeft={!isDeviceSm ? '1px solid white' : ''}
+          // borderLeft={!isDeviceSm ? '1px solid white' : ''}
           textAlign="left"
         >
-          <div style={{ fontSize: 23, fontWeight: 700, letterSpacing: 1.1 }}>
+          <div style={{ fontSize: 16, fontWeight: 700, letterSpacing: 1.1 }}>
             LALIT AHUJA
           </div>
           <div style={{ fontSize: 12 }}>+91-9312891429 , +91-9215891429</div>
           <div
             style={{
-              fontSize: 23,
+              fontSize: 16,
               fontWeight: 700,
               letterSpacing: 1.1,
               marginTop: 8,
@@ -92,7 +114,7 @@ const ContactInfo = () => {
             MANAN AHUJA
           </div>
           <div style={{ fontSize: 12 }}>+91-9599666058</div>
-          <Box
+          {/* <Box
             width="fit-content"
             ml={isDeviceSm ? -1 : 0}
             sx={{
@@ -114,7 +136,34 @@ const ContactInfo = () => {
               />
               <Box ml={1}>www.mananindustries.in</Box>
             </Box>
-          </Box>
+          </Box> */}
+          {!isDeviceSm && (
+            <>
+              <br />
+              <div
+                style={{
+                  fontSize: 16,
+                  fontWeight: 700,
+                  letterSpacing: 1.1,
+                  justifyContent: 'center',
+                }}
+              >
+                HELPFUL LINK
+              </div>
+              <div style={{ fontSize: 12, display: 'flex', color: 'white' }}>
+                <div>
+                  <a style={{ color: 'white' }} href="/products">
+                    Products
+                  </a>
+                </div>
+                <div style={{ marginLeft: 10 }}>
+                  <a style={{ color: 'white' }} href="/contact-us">
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+            </>
+          )}
         </Box>
       </Box>
     </Box>

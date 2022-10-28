@@ -47,7 +47,7 @@ const ContactForm = () => {
   }
 
   const submitFormData = async () => {
-    await EntriesDataService.addEntry({ data, time: new Date() })
+    await EntriesDataService.addEntry({ time: new Date(), ...data })
 
     setData({
       name: '',
