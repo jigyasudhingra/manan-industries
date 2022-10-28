@@ -130,6 +130,9 @@ const Categories = () => {
                     </Button> */}
                     <Link
                       to={i.url}
+                      smooth
+                      spy
+                      duration={1000}
                       style={{
                         color: 'pink',
                         fontSize: 12,
