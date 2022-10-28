@@ -1,18 +1,37 @@
 import { Box } from '@mui/material'
 import { createStyles, makeStyles } from '@mui/styles'
 import React, { useState } from 'react'
+
 import Slider from 'react-slick'
-import rainbowPic from '../../Assets/hybrid.jpeg'
-import rainbow from '../../Assets/rainbow.png'
 import 'slick-carousel/slick/slick-theme.css'
 import 'slick-carousel/slick/slick.css'
+
+import slider1 from '../../Assets/slider1.jpg'
+import slider2 from '../../Assets/slider2.jpg'
+import slider3 from '../../Assets/slider3.jpg'
+import slider4 from '../../Assets/slider4.jpg'
+import slider5 from '../../Assets/slider5.jpg'
+import slider6 from '../../Assets/slider6.jpg'
+import certificate1 from '../../Assets/certificate1.jpg'
+import certificate2 from '../../Assets/certificate2.jpg'
+import certificate3 from '../../Assets/certificate3.jpg'
 
 import MediaQuery from '../../Components/MediaQuery'
 
 const ImageSlider = () => {
   const { isDeviceSm } = MediaQuery()
   const [imageIndex, setImageIndex] = useState(0)
-  const images = [rainbowPic, rainbow, rainbowPic, rainbow, rainbowPic]
+  const images = [
+    slider1,
+    slider2,
+    slider3,
+    slider4,
+    slider5,
+    slider6,
+    certificate1,
+    certificate2,
+    certificate3,
+  ]
   const classes = useStyles()
   return (
     <Box
