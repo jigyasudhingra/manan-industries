@@ -162,7 +162,7 @@ const Categories = () => {
         p={8}
         pl={isDeviceSm ? '10%' : '25%'}
         pr={isDeviceSm ? '10%' : '25%'}
-        // id="polyester-powder"
+        id="polyester-powder"
       >
         <div
           style={{
