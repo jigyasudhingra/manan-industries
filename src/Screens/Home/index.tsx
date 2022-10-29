@@ -1,5 +1,6 @@
 import { Box } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import ContactInfo from '../../Components/ContactInfo'
 import MetaTag from '../../Components/MetaTag'
 import NavigationMenu from '../../Components/NavigationMenu'
@@ -9,6 +10,12 @@ import ImageSlider from './Slider'
 import Welcome from './Welcome'
 
 const Home = () => {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   return (
     <Box width="100%">
       <MetaTag
