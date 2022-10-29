@@ -46,7 +46,7 @@ const Categories = () => {
       <NavigationMenu ProductsPage />
       <Box
         p={isDeviceSm ? 7 : 10}
-        pt={15}
+        pt={11}
         sx={{
           // background: `linear-gradient(29deg, rgba(72,2,131,1) 0%, rgba(34,1,77,1) 59%, rgba(72,2,131,1) 100%)`,
           // backgroundColor: 'rgba(34,1,77,1)',
@@ -62,11 +62,29 @@ const Categories = () => {
         <div>
           <img src={rainbowPic} alt="" width={isDeviceSm ? '100%' : '50%'} />
         </div>
-        <Box
-          pl={!isDeviceSm ? 20 : 0}
-          pr={!isDeviceSm ? 20 : 0}
-          pt={!isDeviceSm ? 5 : 3}
+        {/* <Box
+          py={isDeviceSm ? '2%' : '2%'}
+          px={isDeviceSm ? '2%' : '25%'}
+          sx={{
+            fontSize: 12,
+            textAlign: 'justify',
+            textJustify: 'inter-word',
+          }}
         >
+          Rainbow Powder Coatings, specialist in RAL and PENTONE Series. Our
+          range is highly demanded for its optimum quality. Rainbow has been
+          providing its products and services for last 20 years.
+          <br />
+          <br />
+          Powder Coating is a type of coating that is applied as a free flowing
+          dry powder, unlike conventional liquid paint. Powder coating is
+          typically applied electrostatically and then cured under heat and
+          ultraviolet light. It is usually used to create a harder finish than
+          conventional paint. It is non-toxing and less flamabale, achieves a
+          consistent and long lasting colour finish across the metal and
+          prevents corrosion, chipping and fading.
+        </Box> */}
+        <Box px={!isDeviceSm ? 20 : 0} pt={!isDeviceSm ? 5 : 3}>
           <Grid
             container
             item

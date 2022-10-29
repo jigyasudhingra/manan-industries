@@ -1,6 +1,6 @@
-import { AppBar, Box, Slide, useScrollTrigger } from '@mui/material'
+import { AppBar, Box } from '@mui/material'
 import React from 'react'
-import { NavHashLink as NavLink } from 'react-router-hash-link'
+import { NavLink } from 'react-router-dom'
 import { Link } from 'react-scroll'
 import MediaQuery from './MediaQuery'
 
@@ -50,32 +50,16 @@ interface Props {
   window?: () => Window
   children: React.ReactElement
 }
-
-export const HideOnScroll = (props: Props) => {
-  const { children, window } = props
-  const trigger = useScrollTrigger({
-    target: window ? window() : undefined,
-  })
-
-  return (
-    <Slide direction="down" in={!trigger}>
-      {children}
-    </Slide>
-  )
-}
-
 interface NavigationProps {
   ProductsPage: boolean
 }
 
 const NavigationMenu = (props: NavigationProps) => {
-  const classes = styles as any
   const { isDeviceSm } = MediaQuery()
   const { ProductsPage } = props
 
   return (
-    // <HideOnScroll>
-    <AppBar color="transparent" className={classes.header} elevation={0}>
+    <AppBar color="transparent" elevation={0}>
       <Box
         display="flex"
         flexDirection="row"
@@ -99,6 +83,7 @@ const NavigationMenu = (props: NavigationProps) => {
           {!ProductsPage
             ? NAVIGATION_LINKS.map((nl) => (
                 <Link
+                  key={nl.id}
                   to={nl.url}
                   smooth
                   spy
@@ -108,6 +93,7 @@ const NavigationMenu = (props: NavigationProps) => {
                     fontSize: isDeviceSm ? 11 : 13,
                     letterSpacing: 0.6,
                     fontWeight: isDeviceSm ? 400 : 600,
+                    cursor: 'pointer',
                   }}
                 >
                   {nl.label}
@@ -115,6 +101,7 @@ const NavigationMenu = (props: NavigationProps) => {
               ))
             : PRODUCT_NAVIGATION.map((i) => (
                 <NavLink
+                  key={i.id}
                   to={i.url}
                   style={{
                     color: 'white',
@@ -122,6 +109,7 @@ const NavigationMenu = (props: NavigationProps) => {
                     letterSpacing: 0.6,
                     fontWeight: isDeviceSm ? 400 : 600,
                     textDecoration: 'none',
+                    cursor: 'pointer',
                   }}
                 >
                   {i.label}
@@ -130,33 +118,7 @@ const NavigationMenu = (props: NavigationProps) => {
         </Box>
       </Box>
     </AppBar>
-    // </HideOnScroll>
   )
 }
 
 export default NavigationMenu
-
-const styles = {
-  navMenu: {
-    textDecoration: 'none ! important ',
-    color: 'white',
-    '&:hover': {
-      color: 'white',
-    },
-  },
-  mobileMenu: {
-    textDecoration: 'none ! important ',
-    color: 'white',
-    fontSize: 14,
-    '&:hover': {
-      color: 'white',
-    },
-  },
-  activeMenu: {
-    color: 'white',
-  },
-  header: {
-    '-webkit-backdrop-filter': `blur(3px)`, // For Safari
-    backdropFilter: `blur(3px)`,
-  },
-}
