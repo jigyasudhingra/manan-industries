@@ -14,7 +14,7 @@ function useAsyncTask<T>(task: (arg: T) => Promise<any>) {
       setMessage(resp.message)
     } catch (error) {
       const message = get(error, 'response.data.error.message')
-      setMessage(message)
+      setMessage(resp.message)
       setStatus('ERROR')
     }
     return resp

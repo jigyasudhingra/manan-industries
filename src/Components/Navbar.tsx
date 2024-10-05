@@ -19,20 +19,25 @@ const Navbar = () => {
   )
 }
 
-const styles = {
+const styles: { [key: string]: React.CSSProperties } = {
   nav: {
-    maxWidth: '50%',
-    display: 'inline-block',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     backgroundColor: '#712ad5',
-    padding: 15,
-    borderRadius: 40,
-    marginTop: 50,
+    padding: '15px 30px',
+    borderRadius: '40px',
+    marginTop: '50px',
+    flexWrap: 'wrap', // Ensures the items wrap on small screens
+    maxWidth: '100%',
+    boxSizing: 'border-box', // Type assertion for boxSizing
   },
   a: {
-    padding: 20,
+    padding: '10px 20px',
     color: 'white',
     textDecoration: 'none',
     fontWeight: 600,
+    whiteSpace: 'nowrap',
   },
 }
 
