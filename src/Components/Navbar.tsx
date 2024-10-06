@@ -3,16 +3,16 @@ import React from 'react'
 const Navbar = () => {
   return (
     <div style={styles.nav}>
-      <a style={styles.a} href="http://localhost:3000/">
+      <a style={styles.a} href="https://mananindustries.in">
         About Us
       </a>
-      <a style={styles.a} href="http://localhost:3000/">
+      <a style={styles.a} href="https://mananindustries.in">
         Products
       </a>
-      <a style={styles.a} href="http://localhost:3000/">
+      <a style={styles.a} href="https://mananindustries.in">
         Testimonials
       </a>
-      <a style={styles.a} href="http://localhost:3000/">
+      <a style={styles.a} href="https://mananindustries.in">
         Contact Us
       </a>
     </div>
