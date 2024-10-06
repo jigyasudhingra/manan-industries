@@ -18,7 +18,7 @@ import certificate3 from '../../Assets/certificate3.jpg'
 import MediaQuery from '../../Components/MediaQuery'
 
 const ImageSlider = () => {
-  const { isDeviceSm } = MediaQuery()
+  const { isDeviceSm, isDeviceMd } = MediaQuery()
   const [imageIndex, setImageIndex] = useState(0)
   const images = [
     slider1,
@@ -31,6 +31,7 @@ const ImageSlider = () => {
     certificate3,
   ]
   const classes = useStyles()
+
   return (
     <Box
       p={isDeviceSm ? 3 : 5}
@@ -46,6 +47,7 @@ const ImageSlider = () => {
         letterSpacing: 0.5,
         color: 'white',
       }}
+      id="testimonials"
     >
       <Box py={3}>
         <Slider
@@ -71,8 +73,8 @@ const ImageSlider = () => {
                 <img
                   src={i}
                   alt={i}
-                  width={isDeviceSm ? '90%' : 260}
-                  height="auto"
+                  width={isDeviceSm ? '90%' : 200}
+                  height="400"
                   style={{ borderRadius: 10 }}
                 />
               </Box>

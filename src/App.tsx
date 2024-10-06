@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { HelmetProvider } from 'react-helmet-async'
 import ProductScreen from './Screens/Products'
 import './App.css'
@@ -11,7 +11,7 @@ import LandingPage from './Components/LandingPage'
 
 const App = () => {
   return (
-    <HashRouter>
+    <Router>
       <Box className="App">
         <HelmetProvider>
           <Routes>
@@ -23,7 +23,7 @@ const App = () => {
           </Routes>
         </HelmetProvider>
       </Box>
-    </HashRouter>
+    </Router>
   )
 }
 

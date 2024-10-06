@@ -147,7 +147,6 @@ const LandingPage: React.FC = () => {
           Instagram
         </Button>
       </Box>
-
       {/* Footer */}
       <Footer />
     </Box>

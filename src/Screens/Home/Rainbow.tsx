@@ -43,7 +43,7 @@ const Rainbow = () => {
       <div>
         <Button
           onClick={() => {
-            window.location.href = '/#/products'
+            window.location.href = '/products'
           }}
           style={{
             borderRadius: 20,

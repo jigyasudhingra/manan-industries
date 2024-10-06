@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async'
 
 export interface MetaTagProps {
   title: string
-  //   ogImage?: string
   ogDescription?: string
 }
 

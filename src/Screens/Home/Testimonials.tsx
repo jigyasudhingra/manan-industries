@@ -41,7 +41,6 @@ const Testimonials = () => {
       }}
       pl={22}
       pr={22}
-      id="testimonials"
     >
       <ImageSlider />
       <div

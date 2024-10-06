@@ -48,8 +48,6 @@ const Categories = () => {
         p={isDeviceSm ? 7 : 10}
         pt={11}
         sx={{
-          // background: `linear-gradient(29deg, rgba(72,2,131,1) 0%, rgba(34,1,77,1) 59%, rgba(72,2,131,1) 100%)`,
-          // backgroundColor: 'rgba(34,1,77,1)',
           backgroundImage: `url(${sectionThree})`,
           backgroundSize: 'cover',
           letterSpacing: 0.5,
@@ -62,28 +60,6 @@ const Categories = () => {
         <div>
           <img src={rainbowPic} alt="" width={isDeviceSm ? '100%' : '50%'} />
         </div>
-        {/* <Box
-          py={isDeviceSm ? '2%' : '2%'}
-          px={isDeviceSm ? '2%' : '25%'}
-          sx={{
-            fontSize: 12,
-            textAlign: 'justify',
-            textJustify: 'inter-word',
-          }}
-        >
-          Rainbow Powder Coatings, specialist in RAL and PENTONE Series. Our
-          range is highly demanded for its optimum quality. Rainbow has been
-          providing its products and services for last 20 years.
-          <br />
-          <br />
-          Powder Coating is a type of coating that is applied as a free flowing
-          dry powder, unlike conventional liquid paint. Powder coating is
-          typically applied electrostatically and then cured under heat and
-          ultraviolet light. It is usually used to create a harder finish than
-          conventional paint. It is non-toxing and less flamabale, achieves a
-          consistent and long lasting colour finish across the metal and
-          prevents corrosion, chipping and fading.
-        </Box> */}
         <Box px={!isDeviceSm ? 20 : 0} pt={!isDeviceSm ? 5 : 3}>
           <Grid
             container
@@ -93,7 +69,7 @@ const Categories = () => {
             justifyContent="center"
           >
             {CategoryDetails.map((i) => (
-              <Grid item lg={4} sm={6} xs={12} key={`${i.url}`}>
+              <Grid item lg={4} sm={6} md={4} xs={12} key={`${i.url}`}>
                 <Box className={classes.card} p={3}>
                   <Box>
                     <img
@@ -114,42 +90,22 @@ const Categories = () => {
                         fontWeight: 700,
                         marginTop: 10,
                         color: '#D1CECE',
+                        flexWrap: 'wrap',
                       }}
                     >
                       {i.name}
                     </div>
-                    {/* <div
-                      style={{
-                        color: 'pink',
-                        fontSize: 12,
-                        marginTop: 4,
-                      }}
-                    >
-                      {i.products} product(s)
-                    </div> */}
                     <br />
                     <div
                       style={{
                         fontSize: 12,
                         color: '#D1CECE',
+                        flexWrap: 'wrap',
                       }}
                     >
                       {i.description}
                     </div>
                     <br />
-                    {/* <Button
-                      onClick={() => {
-                        window.location.href = `/products/${i.url}`
-                      }}
-                      style={{
-                        color: 'pink',
-                        fontSize: 12,
-                        letterSpacing: 1.1,
-                        fontFamily: `'Poppins', sans-serif `,
-                      }}
-                    >
-                      VIEW PRODUCTS
-                    </Button> */}
                     <Link
                       to={i.url}
                       smooth
