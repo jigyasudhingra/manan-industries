@@ -14,7 +14,6 @@ const LandingPage: React.FC = () => {
       sx={{
         backgroundColor: '#712ad5', // Hex code with transparency
         minHeight: '100vh',
-        minWidth: '100vw',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
@@ -25,9 +24,10 @@ const LandingPage: React.FC = () => {
       <Box>
         <NavigationMenu ProductsPage={false} />
       </Box>
+
       {/* Main content */}
       <Box
-        width="100vw"
+        width="96.3vw"
         p={1}
         pl={isDeviceSm ? 0 : 6}
         textAlign="left"
@@ -63,6 +63,7 @@ const LandingPage: React.FC = () => {
           Instagram
         </Button>
       </Box>
+
       {/* Footer */}
       <Footer />
     </Box>
