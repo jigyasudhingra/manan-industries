@@ -74,7 +74,8 @@ const ImageSlider = () => {
                   src={i}
                   alt={i}
                   width={isDeviceSm ? '90%' : 200}
-                  height="400"
+                  // height={isDeviceSm ? 200 : 'auto'}
+                  height={isDeviceSm ? 200 : 300}
                   style={{ borderRadius: 10 }}
                 />
               </Box>

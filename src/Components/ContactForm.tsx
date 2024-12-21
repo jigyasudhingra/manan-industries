@@ -1,9 +1,8 @@
 /* eslint-disable react/button-has-type */
-import { Box, Theme } from '@mui/material'
+import { Box, CircularProgress } from '@mui/material'
 import { createStyles, makeStyles } from '@mui/styles'
 import React, { useEffect, useState } from 'react'
 import EntriesDataService from '../entries-service'
-import MediaQuery from './MediaQuery'
 import useAsyncTask from './useAsyncTask'
 
 const ContactForm = () => {
@@ -42,24 +41,24 @@ const ContactForm = () => {
       : setPhoneError('')
   }, [data.phone])
 
-  const getInputVal = (id: string) => {
-    return (document?.getElementById(id) as HTMLInputElement).value
-  }
+  const [loading, setLoading] = useState(false)
 
   const submitFormData = async () => {
-    await EntriesDataService.addEntry({ time: new Date(), ...data })
-
-    setData({
-      name: '',
-      email: '',
-      phone: '',
-      enquiry: '',
-    })
+    setLoading(true)
+    try {
+      await EntriesDataService.addEntry({ time: new Date(), ...data })
+      setData({
+        name: '',
+        email: '',
+        phone: '',
+        enquiry: '',
+      })
+    } finally {
+      setLoading(false)
+    }
   }
-
   const save = useAsyncTask(submitFormData)
   const classes = useStyles()
-  const { isDeviceSm } = MediaQuery()
 
   return (
     <Box
@@ -192,14 +191,14 @@ const ContactForm = () => {
             save.run({})
           }}
         >
-          Send Message
+          {loading ? <CircularProgress size={20} /> : 'Send Message'}
         </button>
       </div>
     </Box>
   )
 }
 
-const useStyles = makeStyles((theme: Theme) =>
+const useStyles = makeStyles(() =>
   createStyles({
     errorText: {
       fontSize: 12,

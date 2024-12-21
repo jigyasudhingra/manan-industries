@@ -1,5 +1,7 @@
-import { AppBar, Box } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
+import { AppBar, Box, IconButton, Drawer, List, ListItem } from '@mui/material'
+import MenuIcon from '@mui/icons-material/Menu' // Hamburger icon
+import CloseIcon from '@mui/icons-material/Close' // Close icon for drawer
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-scroll'
 import MediaQuery from './MediaQuery'
@@ -18,7 +20,7 @@ const NAVIGATION_LINKS: { id: string; url: string; label: string }[] = [
   {
     id: 'contact-us',
     url: 'contact-us',
-    label: 'Contact', // Already exists in the previous code
+    label: 'Contact',
   },
 ]
 
@@ -46,6 +48,11 @@ interface NavigationProps {
 
 const NavigationMenu: React.FC<NavigationProps> = ({ ProductsPage }) => {
   const { isDeviceSm } = MediaQuery()
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false) // State for mobile menu
+
+  const toggleDrawer = (open: boolean) => {
+    setIsDrawerOpen(open)
+  }
 
   return (
     <AppBar color="transparent" elevation={0}>
@@ -56,61 +63,150 @@ const NavigationMenu: React.FC<NavigationProps> = ({ ProductsPage }) => {
         width="auto"
         alignItems="center"
         justifyContent="center"
-        padding={isDeviceSm ? 1 : 2} // Adjust padding based on screen size
+        padding={isDeviceSm ? 1 : 2}
       >
-        <Box
-          alignSelf="center"
-          width={isDeviceSm ? '90%' : '30%'} // Change width based on screen size
-          style={{
-            backgroundColor: 'rgba(86, 19, 180, 0.67)',
-            borderRadius: 50,
-            padding: isDeviceSm ? '10px' : '14px', // Adjust padding for smaller screens
-          }}
-          flexWrap="wrap"
-          display="flex"
-          flexDirection={isDeviceSm ? 'column' : 'row'} // Stack links on smaller screens
-          justifyContent={isDeviceSm ? 'center' : 'space-around'}
-          gap={isDeviceSm ? 1 : 0} // Add gap for smaller screens
+        {/* Desktop and Tablet View */}
+        {!isDeviceSm ? (
+          <Box
+            alignSelf="center"
+            width="30%"
+            style={{
+              backgroundColor: 'rgba(86, 19, 180, 0.67)',
+              borderRadius: 50,
+              padding: '14px',
+            }}
+            display="flex"
+            flexDirection="row"
+            justifyContent="space-around"
+          >
+            {!ProductsPage
+              ? NAVIGATION_LINKS.map((nl) => (
+                  <Link
+                    key={nl.id}
+                    to={nl.url}
+                    smooth
+                    spy
+                    duration={1000}
+                    style={{
+                      color: 'white',
+                      fontSize: 14,
+                      letterSpacing: 0.6,
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                      textAlign: 'left',
+                      paddingRight: '5px',
+                    }}
+                  >
+                    {nl.label}
+                  </Link>
+                ))
+              : PRODUCT_NAVIGATION.map((i) => (
+                  <NavLink
+                    key={i.id}
+                    to={i.url}
+                    style={{
+                      color: 'white',
+                      fontSize: 14,
+                      letterSpacing: 0.6,
+                      fontWeight: 600,
+                      textDecoration: 'none',
+                      cursor: 'pointer',
+                      textAlign: 'left',
+                    }}
+                  >
+                    {i.label}
+                  </NavLink>
+                ))}
+          </Box>
+        ) : (
+          // Mobile View (Hamburger Icon)
+          <IconButton
+            edge="start"
+            aria-label="menu"
+            onClick={() => toggleDrawer(true)}
+            style={{ position: 'absolute', left: 20, color: '#fff' }} // Custom orange color
+          >
+            <MenuIcon />
+          </IconButton>
+        )}
+
+        {/* Drawer for Mobile Navigation */}
+        <Drawer
+          anchor="left"
+          open={isDrawerOpen}
+          onClose={() => toggleDrawer(false)}
         >
-          {!ProductsPage
-            ? NAVIGATION_LINKS.map((nl) => (
-                <Link
-                  key={nl.id}
-                  to={nl.url}
-                  smooth
-                  spy
-                  duration={1000}
-                  style={{
-                    color: 'white',
-                    fontSize: isDeviceSm ? 12 : 14, // Adjust font size for smaller screens
-                    letterSpacing: 0.6,
-                    fontWeight: isDeviceSm ? 400 : 600,
-                    cursor: 'pointer',
-                    textAlign: isDeviceSm ? 'center' : 'left', // Center text on small screens
-                    paddingRight: '5px',
-                  }}
-                >
-                  {nl.label}
-                </Link>
-              ))
-            : PRODUCT_NAVIGATION.map((i) => (
-                <NavLink
-                  key={i.id}
-                  to={i.url}
-                  style={{
-                    color: 'white',
-                    fontSize: isDeviceSm ? 12 : 14, // Adjust font size for smaller screens
-                    letterSpacing: 0.6,
-                    fontWeight: isDeviceSm ? 400 : 600,
-                    textDecoration: 'none',
-                    cursor: 'pointer',
-                    textAlign: isDeviceSm ? 'center' : 'left', // Center text on small screens
-                  }}
-                >
-                  {i.label}
-                </NavLink>
-              ))}
-        </Box>
+          <Box
+            role="presentation"
+            width={250}
+            display="flex"
+            flexDirection="column"
+            alignItems="start"
+            justifyContent="center"
+            padding="20px"
+            style={{
+              backgroundColor: 'rgba(86, 19, 180, 0.9)',
+              height: '100%',
+            }}
+          >
+            {/* Close Button */}
+            <IconButton
+              style={{ alignSelf: 'flex-end', color: 'white' }}
+              onClick={() => toggleDrawer(false)}
+            >
+              <CloseIcon />
+            </IconButton>
+
+            {/* Links */}
+            <List>
+              {!ProductsPage
+                ? NAVIGATION_LINKS.map((nl) => (
+                    <ListItem
+                      button
+                      key={nl.id}
+                      onClick={() => toggleDrawer(false)}
+                    >
+                      <Link
+                        to={nl.url}
+                        smooth
+                        spy
+                        duration={1000}
+                        style={{
+                          color: 'white',
+                          fontSize: 14,
+                          letterSpacing: 0.6,
+                          fontWeight: 600,
+                          cursor: 'pointer',
+                          textDecoration: 'none',
+                        }}
+                      >
+                        {nl.label}
+                      </Link>
+                    </ListItem>
+                  ))
+                : PRODUCT_NAVIGATION.map((i) => (
+                    <ListItem
+                      button
+                      key={i.id}
+                      onClick={() => toggleDrawer(false)}
+                    >
+                      <NavLink
+                        to={i.url}
+                        style={{
+                          color: 'white',
+                          fontSize: 14,
+                          letterSpacing: 0.6,
+                          fontWeight: 600,
+                          textDecoration: 'none',
+                        }}
+                      >
+                        {i.label}
+                      </NavLink>
+                    </ListItem>
+                  ))}
+            </List>
+          </Box>
+        </Drawer>
       </Box>
     </AppBar>
   )
